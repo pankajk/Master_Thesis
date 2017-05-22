@@ -3,7 +3,6 @@ function [fy, l, dstsSqrX, dstsSqrXY, indsXX, indsXY, sigma0] = calcLaplcianPyra
 % "Heterogeneous datasets representation and learning using diffusion maps
 % and laplacian pyramids", Rabin and Coifman
 % Here X is sample set, Y is new samples to extend to
-% Gal Mishne
 
 dParams.sigma0 = 25;        % initial coarse sigma
 dParams.maxIters = 15;      % maximum number of iterations

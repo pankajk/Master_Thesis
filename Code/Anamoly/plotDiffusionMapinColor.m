@@ -2,8 +2,6 @@ function C = plotDiffusionMapinColor(diffusionCoordIm, idxPatches, diffusionMap,
 % plots the diffusion map with RGB values associated to every sample
 % used to correspond between the image and diffusion map = understand what
 % coordinates in the diffusion map each pixel was given
-%
-% Gal Mishne
 
 if ~exist('step','var')
     step = 30;

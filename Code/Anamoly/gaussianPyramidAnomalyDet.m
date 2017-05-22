@@ -4,16 +4,6 @@ function gaussianPyramidAnomalyDet(im, path_name, image_name, saveRes, testFullS
 % sets the different parameters for detection at each level
 % upscale the suspicious pixel to scale of next level
 % outputs final detection score
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% MATLAB code implementation of multiscale                   %
-% anomaly detection algorithm presented in                   %
-% Gal Mishne and Israel Cohen,                               %
-% "Multiscale Anomaly Detection Using Diffusion Maps",       %
-% IEEE Journal of Selected Topics in Signal Processing,      %
-% Vol. 7, Number 1, February 2013, pp. 111-123.              %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Gal Mishne
 
 close all
 if ~exist('im','var')

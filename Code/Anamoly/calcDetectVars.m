@@ -1,7 +1,6 @@
 function detectionVars = calcDetectVars(im, topleftOrigin, numPatchesinDim)
 % calc variables in advance to save time in calculating the similarity
 % measure
-% Gal Mishne
 
 indsIm = reshape(1:size(im,1)*size(im,2),size(im,1),size(im,2));
 

@@ -1,8 +1,6 @@
 function [diffusionCoordIm] = ...
     displayResults(im, configParams, reconstructVars, diffusion_mapX, dmInds, idxPatches, figId, results)
 % various plots and images for display and debugging
-%
-% Gal Mishne
 
 detection    = results.detection;
 [nrows, ncols, nlayers] = size(im);

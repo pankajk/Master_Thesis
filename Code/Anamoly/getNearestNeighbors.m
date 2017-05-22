@@ -1,7 +1,6 @@
 function [dstsXY, indsXY, sigma] = getNearestNeighbors(X, Y, configParams)
 % [DSTSXY INDSXY SIGMA] = GETNEARESTNEIGHBORS(X, Y, CONFIGPARAMS)
 % calculate affinity matrix between samples X and new samples Y
-% Gal Mishne
 
 numberOfPointsX = size(X,1);
 numberOfPointsY = size(Y,1);

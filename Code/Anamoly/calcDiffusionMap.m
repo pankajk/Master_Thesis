@@ -4,8 +4,7 @@ function [diffusion_map, Lambda, Psi, nnData] = calcDiffusionMap(X,configParams)
 % affinity matrix is calculated for kNN nearest neighbors, resulting in
 % sparse matrix. This saves on runtime.
 % the scale for the affinity matrix can be set using auto-tuning
-%
-% Gal Mishne
+
 
 dParams.kNN       = 4; % number of nearest neighbors to consider in affinity matrix
 dParams.self_tune = 0; % if true sets local scale for each sample using auto-tuning

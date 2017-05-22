@@ -4,8 +4,6 @@ function [dmInds, detIm] = diffusionAnomalyDetection(inputs, configParams)
 % sets the samples to be used in construction of the diffusion map
 % calculates the diffusion map and extends it to all pixels
 % performs anomaly detection in the reduced dimensionality 
-%
-% Gal Mishne
 
 if ~exist('inputs','var')
     disp('error: function needs inputs struct with fields im, image_name, path_name, dmInds');

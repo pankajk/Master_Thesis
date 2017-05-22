@@ -4,8 +4,6 @@ function [results] = anoDetection(detectionVars, diffusion_mapX)
 % pixel. If prior knowledge of the size of the anomaly exists, a mask can
 % be used to ignore the close neighborhood of the pixel and consider only
 % the far neighborhood (ring around the pixel)
-%
-% Gal Mishne
 
 useSaliency = detectionVars.useSaliency;
 topleftOrigin = detectionVars.topleftOrigin;

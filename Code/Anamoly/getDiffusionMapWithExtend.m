@@ -3,10 +3,8 @@ function diffusion_mapX = getDiffusionMapWithExtend(X, Y, configParams)
 % Y is sample set, X is entire dataset
 % first construct diffusion map for Y and then use out-of-sample extension 
 % to extend to all points in X
-%
-% Gal Mishne
 
-%%
+
 if configParams.verbose
     disp('Calculating Diffusion map');
 end

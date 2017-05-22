@@ -3,8 +3,7 @@ function diffusionCoordIm = getDiffusionCoordIm(im, idxPatches, diffusion_mapX)
 % coordinates associated with each pixel
 % used to correspond between the image and diffusion map = understand what
 % coordinates in the diffusion map each pixel was given
-%
-% Gal Mishne
+
 
 [row, col] = ind2sub([size(im,1),size(im,2)],idxPatches);
 dimDMcoords = size(diffusion_mapX,1);
