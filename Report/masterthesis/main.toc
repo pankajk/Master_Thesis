@@ -1,0 +1,42 @@
+\contentsline {chapter}{Contents}{v}{dummy.3}
+\contentsline {chapter}{List of Figures}{vii}{dummy.5}
+\contentsline {chapter}{List of Tables}{viii}{dummy.7}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.9}
+\contentsline {section}{\numberline {1.1}Context}{1}{section.10}
+\contentsline {section}{\numberline {1.2}Manifold Learning}{1}{section.11}
+\contentsline {section}{\numberline {1.3}Motivation}{2}{section.13}
+\contentsline {section}{\numberline {1.4}Contribution}{2}{section.14}
+\contentsline {section}{\numberline {1.5}Organization}{2}{section.15}
+\contentsline {chapter}{\numberline {2}Mathematical Background }{3}{chapter.16}
+\contentsline {section}{\numberline {2.1}Metric Space}{3}{section.18}
+\contentsline {section}{\numberline {2.2}Topology}{4}{section.25}
+\contentsline {subsection}{\numberline {2.2.1}Connectedness}{5}{subsection.28}
+\contentsline {subsection}{\numberline {2.2.2}Neighborhoods}{5}{subsection.30}
+\contentsline {section}{\numberline {2.3}Manifolds}{5}{section.32}
+\contentsline {section}{\numberline {2.4}Tangent Spaces}{6}{section.36}
+\contentsline {subsection}{\numberline {2.4.1}Embedding}{7}{subsection.38}
+\contentsline {chapter}{\numberline {3}Manifold Learning}{9}{chapter.40}
+\contentsline {section}{\numberline {3.1}Introduction}{9}{section.42}
+\contentsline {section}{\numberline {3.2}Problem Definition}{10}{section.43}
+\contentsline {section}{\numberline {3.3}Linear Methods}{10}{section.44}
+\contentsline {subsection}{\numberline {3.3.1}Principle Component Analysis}{10}{subsection.45}
+\contentsline {subsection}{\numberline {3.3.2}Multi-Dimensional Scaling}{12}{subsection.54}
+\contentsline {section}{\numberline {3.4}Non-Linear Methods}{14}{section.60}
+\contentsline {subsection}{\numberline {3.4.1}Graph-based Algorithms}{14}{subsection.61}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Isomap}{14}{subsubsection.62}
+\contentsline {subsubsection}{\numberline {3.4.1.2}Locally linear Embedding}{14}{subsubsection.65}
+\contentsline {subsection}{\numberline {3.4.2}Laplacian-based Algorithms}{17}{subsection.80}
+\contentsline {subsubsection}{\numberline {3.4.2.1}Laplacian Eigenmaps}{17}{subsubsection.81}
+\contentsline {subsubsection}{\numberline {3.4.2.2}Diffusion Maps}{18}{subsubsection.83}
+\contentsline {section}{\numberline {3.5}Other manifold learning algorithms}{19}{section.95}
+\contentsline {section}{\numberline {3.6}Intrinsic Dimension}{20}{section.97}
+\contentsline {chapter}{\numberline {4}Dimension Reduction and Image Process}{22}{chapter.99}
+\contentsline {chapter}{\numberline {5}Anomaly Detection}{23}{chapter.100}
+\contentsline {chapter}{\numberline {6}Conclusion}{24}{chapter.101}
+\contentsline {section}{\numberline {6.1}Conclusions}{24}{section.102}
+\contentsline {section}{\numberline {6.2}Future Work}{25}{section.109}
+\vspace {2em}
+\contentsline {chapter}{\numberline {A}Blockchain SQL Schema}{26}{appendix.112}
+\vspace {2em}
+\contentsline {chapter}{Bibliography}{27}{dummy.113}
+\vspace {2em}

@@ -1,0 +1,502 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt, oneside]{Thesis} % The default font size and one-sided printing (no margin offsets)
+
+\usepackage{amsmath,amsxtra,amsthm,amssymb,makeidx,graphics}
+
+%\usepackage[demo]{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{enumitem}
+
+%Math Operator
+
+\DeclareMathOperator{\cov}{cov}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\newcommand{\R}{\bb{R}}
+\newcommand{\cm}[1]{\mathcal{#1}}
+\newcommand{\deq}{\triangleq}
+\newcommand{\data}{\cm{D}}
+\newcommand{\given}{\mid}
+\newcommand{\enn}{\ensuremath{\varepsilon\text{-\textsc{nn}}}}
+\renewcommand{\epsilon}{\varepsilon}
+\newcommand{\acro}[1]{\textsc{\MakeLowercase{#1}}}
+\newcommand{\trans}{\ensuremath{^\top}}
+\DeclareMathOperator{\diag}{diag}
+
+% For Diffusion Map
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\essinf}{ess\,inf}
+\DeclareMathOperator*{\esssup}{ess\,sup}
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\newcommand{\MYfooter}{\smash{
+\hfil\parbox[t][\height][t]{\textwidth}{
+}\hfil\hbox{}}}
+\makeatletter
+\def\ps@IEEEtitlepagestyle{%
+%\def\@oddhead{\mbox{}2012 \rightmark \hfil }%
+\def\@oddfoot{\MYfooter}%
+\def\@evenfoot{\MYfooter}}
+\makeatother
+\pagestyle{headings}
+% adjust as needed
+\addtolength{\footskip}{0\baselineskip}
+\addtolength{\textheight}{-1\baselineskip}
+
+\newcounter{letter}
+\newcommand{\eqabcbegin}{\setcounter{letter}{1}
+            \renewcommand{\theequation}{\arabic{equation}\alph{letter}}}
+\newcommand{\nexteqabc}{\addtocounter{letter}{1}\addtocounter{equation}{-1}}
+\newcommand{\eqabcend}{\renewcommand{\theequation}{\arabic{equation}}}
+
+\newcommand {\myvec}[1] {{\mbox{\boldmath $#1$}}}
+\newcommand {\mymat}[1]  {{\mbox{\boldmath $#1$}}}
+
+\def\sxi{\mbox{\begin{scriptsize}\boldmath{$\xi$}\end{scriptsize}}}
+\def\sth{\mbox{\begin{scriptsize}\boldmath{$\theta$}\end{scriptsize}}}
+\def\suvphi{\mbox{\begin{scriptsize}\boldmath{$\varphi$}\end{scriptsize}}}
+
+\newcommand {\defeq}{\stackrel{\triangle}{=}}
+
+\newcommand {\mX}   {\mymat{X}}
+\newcommand {\mPsi} {\mymat{\Psi}}
+\newcommand {\mS}   {\mymat{S}}
+\newcommand {\mI}   {\mymat{I}}
+\newcommand {\mA}   {\mymat{A}}
+\newcommand {\mB}   {\mymat{B}}
+\newcommand {\mC}   {\mymat{C}}
+\newcommand {\mZ}   {\mymat{Z}}
+\newcommand {\mGam}  {\mymat{\Gamma}}
+\newcommand {\mPi}   {\mymat{\Pi}}
+\newcommand {\mSig}   {\mymat{\Sigma}}
+\newcommand {\mO}   {\mymat{0}}
+\newcommand {\mU}   {\mymat{U}}
+\newcommand {\mV}   {\mymat{V}}
+\newcommand {\hmPsi} {\widehat{\mPsi}}
+\newcommand {\hmS}   {\widehat{\mS}}
+
+\newcommand {\smGam} {{\mbox{\begin{tiny}\boldmath{$\mGam$}\end{tiny}}}}
+\newcommand {\smPi} {{\mbox{\begin{tiny}\boldmath{$\mPi$}\end{tiny}}}}
+\newcommand {\smPsi} {{\mbox{\begin{tiny}\boldmath{$\mPsi$}\end{tiny}}}}
+\newcommand {\smS} {{\mbox{\begin{tiny}{$\mS$}\end{tiny}}}}
+%\def\baselinestretch{1.5}
+
+\newcommand {\bC}  {\overline{C}}
+\newcommand {\bmC} {\overline{\mC}}
+
+\newcommand {\ux} {\myvec{x}}
+\newcommand {\us} {\myvec{s}}
+\newcommand {\un} {\myvec{n}}
+
+\newcommand {\Rset} {\mathbb{R}}
+\newcommand {\setI} {\mathcal{I}}
+\newcommand {\setL} {\mathcal{L}}
+\newcommand {\setB} {\mathcal{B}}
+\newcommand {\setA} {\mathcal{A}}
+\newtheorem{D1}{Defenition}
+\newtheorem{L1}{Lema}
+\def\trace{\mathop{\rm Tr}\nolimits}
+\def\rank{\mathop{\rm Rank}\nolimits}
+\def\Diag{\mathop{\rm Diag}\nolimits}
+\def\cov{\mathop{\rm cov}\nolimits}
+\def\var{\mathop{\rm var}\nolimits}
+\def\sign{\mathop{\rm sign}\nolimits}
+\def\supp{\mathop{\rm supp}\nolimits}
+\def\Re{\mathop{\mathrm{Re}}\nolimits}
+\def\Im{\mathop{\mathrm{Im}}\nolimits}
+%-------------------------------------------------------------------------------
+
+% Algorithms
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+
+\usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+\hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
+\title{\ttitle} % Defines the thesis title - don't touch this
+
+
+\begin{document}
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\setstretch{1.3} % Line spacing of 1.3
+
+% Define the page headers using the FancyHdr package and set up for one-sided printing
+\fancyhead{} % Clears all page headers and footers
+\rhead{\thepage} % Sets the right side header to show the page number
+\lhead{} % Clears the left side page header
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % New command to make the lines in the title page
+
+% PDF meta-data
+\hypersetup{pdftitle={\ttitle}}
+\hypersetup{pdfsubject=\subjectname}
+\hypersetup{pdfauthor=\authornames}
+\hypersetup{pdfkeywords=\keywordnames}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+
+\begin{center}
+\vfill
+{ \huge \textbf{Manifold Learning for Image Processing}}\\
+{ \LARGE \textbf{} }\\ % Comment this out if no subtitle and use \\[2.5cm] 
+			% after title. In case your title itself runs for three lines and you do not have 
+			% a subtitle, use \\[1.5cm] instead of \\[2.5cm]
+			
+\end{center}
+\setstretch{1.25}
+\begin{center}
+\textit{A Thesis Submitted in Partial Fulfilment of the Requirements for the Degree of}\\[1cm]
+\textmd{MASTER OF SCIENCE}\\
+IN\\
+\textmd{ADVANCED COMBINATORICS}\\
+\singlespacing
+\singlespacing
+\large{by}\\[0.5cm]
+\singlespacing
+\singlespacing
+\large\textbf{PANKAJ KUMAR}\\
+\singlespacing
+\begin{center}
+\includegraphics[scale=1]{./snulogo.png}
+\end{center}
+\singlespacing
+\singlespacing
+\begin{center}
+
+\textmd{Moscow Institute of Physics and Technology}\\
+\singlespacing
+Moscow, Russian Federation\\
+\singlespacing
+June, 2017\\
+
+\end{center}
+\end{center}
+\end{titlepage}
+%----------------------------------------------------------------------------------------
+%	CERTIFICATE
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+\begin{center}
+\begin{center}
+\includegraphics[scale=0.8]{./snulogo.png}
+\end{center}
+\singlespacing
+\singlespacing
+\begin{center}
+
+\textmd{Moscow Institute of Physics and Technology}\\
+\singlespacing
+Moscow, Russian Federation\\
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\textbf{CERTIFICATE\\}
+\end{center}
+\end{center}
+This is to certify that the present work entitled, ``\textbf{Manifold Learning for Image Processing}” submitted by \textbf{Pankaj Kumar} to the Moscow Insitute of Physics and Technology, Russian Federation in partial fulfilment of the requirements for the award of the degree of Master of Science is approved.
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\begin{minipage}{.45\linewidth}
+
+\begin{flushleft}                                   
+
+.......................................\\
+Prof. Roman Karasev\\
+Professor\\
+Department of Mathematics\\
+Moscow Institute of Physics and Technology \\
+\end{flushleft} 
+\end{minipage}
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	DECLARATION PAGE
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+\begin{center}
+\begin{center}
+\includegraphics[scale=0.8]{./snulogo.png}
+\end{center}
+\singlespacing
+\singlespacing
+\begin{center}
+\textmd{Moscow Institute of Physics and Technology}\\
+\singlespacing
+Moscow, Russian Federation\\
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\textbf{DECLARATION\\}
+\end{center}
+\end{center}
+I hereby declare that the thesis titled, ``\textbf{Manifold Learning for Image Processing}” being submitted to the Moscow Institute of Physics and Technology, Russian Federation in partial fulfillment of the requirements for the award of the degree of Master of Sceience is a record of bonafide work carried out by me.\\
+
+The matter embodied in the thesis has not been submitted for the award of any degree in any university or institution.\\
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\begin{minipage}{.45\linewidth}
+\begin{flushleft}                       
+June, 2017 \\
+Moscow, Russian Federation \\
+\end{flushleft} 
+\end{minipage}
+\hfill
+\begin{minipage}{.45\linewidth}
+\begin{flushright}                                      
+
+Pankaj Kumar\\
+
+\end{flushright} 
+\end{minipage}
+\clearpage % Start a new page
+%----------------------------------------------------------------------------------------
+%	Certification PAGE 1
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+%\input{Chapters/certi}
+
+\clearpage % Start a new page
+%----------------------------------------------------------------------------------------
+%	declaration PAGE
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+%\input{Chapters/dec}
+
+\clearpage % Start a new page
+%----------------------------------------------------------------------------------------
+%	Acknowledgement PAGE
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+\input{Chapters/akn}
+
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+\input{Chapters/abstract}
+
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % The page style headers have been "empty" all this time, now use the "fancy" headers as defined before to bring them back
+%\lhead{\emph{Contents}} % Set the left side page header to "Contents"
+\tableofcontents % Write out the Table of Contents
+
+\lhead{\emph{List of Figures}} % Set the left side page header to "List of Figures"
+\listoffigures % Write out the List of Figures
+
+\lhead{\emph{List of Tables}} % Set the left side page header to "List of Tables"
+\listoftables % Write out the List of Tables
+
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+
+%\clearpage % Start a new page
+
+%\setstretch{1.5} % Set the line spacing to 1.5, this makes the following tables easier to read
+
+%\lhead{\emph{Abbreviations}} % Set the left side page header to "Abbreviations"
+%\listofsymbols{ll} % Include a list of Abbreviations (a table of two columns)
+%{
+%\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere \\
+%\textbf{Acronym} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or \\
+%}
+
+%----------------------------------------------------------------------------------------
+%	PHYSICAL CONSTANTS/OTHER DEFINITIONS
+%----------------------------------------------------------------------------------------
+
+%\clearpage % Start a new page
+
+%\lhead{\emph{Physical Constants}} % Set the left side page header to "Physical Constants"
+
+%\listofconstants{lrcl} % Include a list of Physical Constants (a four column table)
+%{
+%Speed of Light & $c$ & $=$ & $2.997\ 924\ 58\times10^{8}\ \mbox{ms}%^{-\mbox{s}}$ (exact)\\
+% Constant Name & Symbol & = & Constant Value (with units) \\
+%}
+
+%----------------------------------------------------------------------------------------
+%	SYMBOLS
+%----------------------------------------------------------------------------------------
+
+%\clearpage % Start a new page
+
+%\lhead{\emph{Symbols}} % Set the left side page header to "Symbols"
+
+%\listofnomenclature{lll} % Include a list of Symbols (a three column table)
+%{
+%$a$ & distance & m \\
+%$P$ & power & W (Js$^{-1}$) \\
+% Symbol & Name & Unit \\
+
+%& & \\ % Gap to separate the Roman symbols from the Greek
+
+%$\omega$ & angular frequency & rads$^{-1}$ \\
+% Symbol & Name & Unit \\
+%}
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTER1
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\input{Chapters/Chapter1}
+%\input{Chapters/Chapter1} 
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTER1
+%----------------------------------------------------------------------------------------
+
+%\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\input{Chapters/Chapter2}
+%\input{Chapters/Chapter2} 
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTER2
+%----------------------------------------------------------------------------------------
+
+%\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\input{Chapters/Chapter3}
+%\input{Chapters/Chapter3} 
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTER3
+%----------------------------------------------------------------------------------------
+
+%\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\input{Chapters/Chapter4}
+%\input{Chapters/Chapter4} 
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTER4
+%----------------------------------------------------------------------------------------
+
+%\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\input{Chapters/Chapter5}
+%\input{Chapters/Chapter5} 
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTER5
+%----------------------------------------------------------------------------------------
+
+%\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\input{Chapters/Chapter6}
+%\input{Chapters/Chapter6} 
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTER6
+%----------------------------------------------------------------------------------------
+
+%\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+\input{Appendices/AppendixA}
+%\input{Appendices/AppendixB}
+%\input{Appendices/AppendixC}
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+%\addcontentsline{toc}{chapter}{Bibliography}
+\backmatter
+
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+
+%----------------------------------------------------------------------------------------
+\clearpage % Start a new page
+\input{Chapters/Bibliography}
+\label{Bibliography}
+
+\lhead{\emph{Bibliography}} % Change the page header to say "Bibliography"
+
+\bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+\addtocontents{toc}{\vspace{2em}}
+%\bibliography{Bibliography} % The references (bibliography) information are stored in the file named "Bibliography.bib"
+
+\end{document}  
