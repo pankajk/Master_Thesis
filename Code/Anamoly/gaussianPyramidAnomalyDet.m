@@ -7,13 +7,13 @@ function gaussianPyramidAnomalyDet(im, path_name, image_name, saveRes, testFullS
 
 close all
 if ~exist('im','var')
-    im  = im2double(imread('./diffusion_maps/data/duck.jpg'));
+    im  = im2double(imread('./Master_Thesis/Code/Anamoly/data/sheep.jpg'));
 end
 if ~exist('path_name','var')
-    path_name  = './diffusion_maps/output_duck/';
+    path_name  = './Master_Thesis/Code/Anamoly/output_sheep/';
 end
 if ~exist('image_name','var')
-    image_name  = 'duck';
+    image_name  = 'sheep';
 end
 if ~exist('saveRes','var')
     saveRes  = true;

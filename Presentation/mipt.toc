@@ -1,0 +1,19 @@
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Manifold Learning}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Problem Definition}{7}{0}{2}
+\beamer@subsectionintoc {2}{2}{Linear Methods}{8}{0}{2}
+\beamer@subsectionintoc {2}{3}{Non-Linear Methods}{11}{0}{2}
+\beamer@sectionintoc {3}{Contribution}{16}{0}{3}
+\beamer@sectionintoc {4}{Optical Character Recognition}{17}{0}{4}
+\beamer@subsectionintoc {4}{1}{Introduction}{17}{0}{4}
+\beamer@subsectionintoc {4}{2}{Data}{19}{0}{4}
+\beamer@subsectionintoc {4}{3}{Preprocessing}{21}{0}{4}
+\beamer@subsectionintoc {4}{4}{Results and Discussion}{22}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{1}{Linear Method:PCA}{23}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{2}{Non-Linear Method}{26}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{3}{Recognition}{29}{0}{4}
+\beamer@sectionintoc {5}{Anomaly Detection}{36}{0}{5}
+\beamer@subsectionintoc {5}{1}{Data}{37}{0}{5}
+\beamer@subsectionintoc {5}{2}{Algorithms}{38}{0}{5}
+\beamer@subsectionintoc {5}{3}{Results}{40}{0}{5}
+\beamer@sectionintoc {6}{Conclusions}{43}{0}{6}

@@ -1,0 +1,222 @@
+\documentclass[12pt,a4paper]{article}
+
+% Useful packages for article:
+\usepackage{amsmath, amssymb, amsfonts, amsthm}
+\usepackage{graphicx}
+\usepackage[round]{natbib}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{bm}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{mathabx}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{tabls,calc}
+\usepackage{float}
+\usepackage{parskip}
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\floatstyle{ruled}
+\restylefloat{table}
+\restylefloat{figure}
+
+%Math Operator
+
+\DeclareMathOperator{\cov}{cov}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\newcommand{\R}{\bb{R}}
+\newcommand{\cm}[1]{\mathcal{#1}}
+\newcommand{\deq}{\triangleq}
+\newcommand{\data}{\cm{D}}
+\newcommand{\given}{\mid}
+\newcommand{\enn}{\ensuremath{\varepsilon\text{-\textsc{nn}}}}
+\renewcommand{\epsilon}{\varepsilon}
+\newcommand{\acro}[1]{\textsc{\MakeLowercase{#1}}}
+\newcommand{\trans}{\ensuremath{^\top}}
+\DeclareMathOperator{\diag}{diag}
+
+% Algorithms
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+%Theorem, Lemma, etc. environments
+\newtheorem{theorem}{Theorem}%[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{result}[theorem]{Result}
+
+\newcommand{\floatintro}[1]{
+
+  \vspace*{0.1in}
+
+  {\footnotesize
+
+    #1
+
+    }
+
+  \vspace*{0.1in}
+}
+\usepackage[pdftex, pdfusetitle, plainpages=false, 
+				letterpaper, bookmarks, bookmarksnumbered,
+				colorlinks, linkcolor=Sepia, filecolor=Blue, urlcolor=Blue, citecolor=Violet]
+				{hyperref}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  Floats
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  \c@topnumber            : Number of floats allowed at the top of a column.
+\setcounter{topnumber}{8}
+%
+%  \topfraction            : Fraction of column that can be devoted to floats.
+\renewcommand\topfraction{1}
+%
+%  \c@bottomnumber, \bottomfraction : Same as above for bottom of page.
+\setcounter{bottomnumber}{3}
+\renewcommand\bottomfraction{.8}
+%
+%  \c@totalnumber          : Number of floats allowed in a single column,
+%                          including in-text floats.
+\setcounter{totalnumber}{8}
+%
+%  \textfraction         : Minimum fraction of column that must contain text.
+\renewcommand\textfraction{0}
+\renewcommand\floatpagefraction{.9}
+%
+%  \c@dbltopnumber, \dbltopfraction : Same as above, but for double-column
+%                          floats.
+\setcounter{dbltopnumber}{6}
+\renewcommand\dbltopfraction{1}
+\renewcommand\dblfloatpagefraction{.9}
+%
+\pretolerance=8000
+\tolerance=9500
+\hfuzz=0.5pt
+\vfuzz=2pt
+\hbadness=8000
+\vbadness=8000
+%\newcommand{\nohyphens}{\hyphenpenalty=10000\exhyphenpenalty=10000}
+\def\endcolumn{\parfillskip=0pt\par\newpage
+   \noindent\parfillskip=0pt plus 1fil{}}
+
+\newsavebox\ruledbox
+\newlength \ruledlength
+\ruledlength\linewidth 
+\newcounter{box}
+\renewcommand \thebox{\@arabic\c@box}
+\def\fps@box{tbp}
+\def\ftype@box{1}
+\def\ext@box{lob}
+\def\boxname{Box}
+\def\fnum@box{\boxname~\thebox}
+\@ifundefined{color}{%
+\newenvironment{thinbox}
+ {\fboxsep6pt
+  \setlength\ruledlength{\linewidth-2\fboxsep-2\fboxrule}
+  \begin{lrbox}{\ruledbox}
+   \begin{minipage}{\ruledlength}
+   \def\@captype{box}}
+ {\end{minipage}\end{lrbox}
+  \@float{box}
+   \fbox{\usebox{\ruledbox}}
+  \end@float}
+\def\endcolumn{\parfillskip=0pt\par\newpage
+   \noindent\parfillskip=0pt plus 1fil{}}
+% CVR's two-column box
+\newenvironment{widebox}
+ {\fboxsep6pt
+  \setlength\ruledlength{\textwidth-2\fboxsep-2\fboxrule}
+  \begin{lrbox}{\ruledbox}
+   \begin{minipage}{\ruledlength}
+   \def\@captype{box}}
+ {\end{minipage}\end{lrbox}
+  \@dblfloat{box}
+   \fbox{\usebox{\ruledbox}}
+  \end@dblfloat}
+}{%
+\definecolor{linecolor}{rgb}{0,0,.6}
+\definecolor{bgcolor}{rgb}{1,.894,.769}
+\newenvironment{thinbox}
+ {\fboxsep6pt%\fboxrule2pt
+  \setlength\ruledlength{\linewidth-2\fboxsep-2\fboxrule}
+  \begin{lrbox}{\ruledbox}
+   \begin{minipage}{\ruledlength}
+   \def\@captype{box}}
+ {\end{minipage}\end{lrbox}
+  \@float{box}
+   \fcolorbox{linecolor}{bgcolor}{\usebox{\ruledbox}}
+  \end@float}
+\def\endcolumn{\parfillskip=0pt\par\newpage
+   \noindent\parfillskip=0pt plus 1fil{}}
+% CVR's two-column box
+\newenvironment{widebox}
+ {\fboxsep6pt\fboxrule1pt
+  \setlength\ruledlength{\textwidth-2\fboxsep-2\fboxrule}
+  \begin{lrbox}{\ruledbox}
+   \begin{minipage}{\ruledlength}
+   \def\@captype{box}}
+ {\end{minipage}\end{lrbox}
+  \@dblfloat{box}
+   \fcolorbox{linecolor}{bgcolor}{\usebox{\ruledbox}}
+  \end@dblfloat}
+}
+\makeatother
+  
+\title{Manifold Learning Algorithms for Image Processing \thanks{Outline} }
+
+\author{Pankaj Kumar\thanks{Moscow Institute of Physics and Technology, Moscow, Russian Federation Email: \url{kumar.x.pankaj@gmail.com}}} 
+
+
+\date{}
+
+\begin{document}
+\maketitle
+%\begin{abstract}
+%
+%\end{abstract}
+%\par
+%\noindent
+%\textbf{Keywords:} Agent Based Model $\cdot$ High Frequency Trading $\cdot$ Agent Ecology $\cdot$ Trading Strategies $\cdot$ CDA \\
+%\\
+%\textbf{JEL Classification:} G10 $\cdot$ C12
+%\newpage
+%\tableofcontents
+%\newpage
+\section{Exposition}
+
+Today there is a rapidly increasing need to process more complex features that are naturally represented as points on a manifold, hidden in high dimensional signals such as images. The need for smart algorithms
+is obvious. Manifold Learning pursuits the goal to embed data that originally lies in a high dimensional space in a lower dimensional space, while preserving characteristic properties. More specifically, these methods try
+to recover a submanifold embedded in a high-dimensional space which can
+even be dimensionally infinite as in the case of shapes. The output of such
+an algorithm is a mapping into a feature space, where the analysis of data becomes easier. 
+
+Before jumping directly to manifold learning, we will provide an introduction to the geometry of metric spaces and machine learning methods. The intention is to provide some elementary concepts about the mathematical notions necessary for understanding the notations involved in manifold learning.
+
+With necessary mathematical background, we review important linear and non-linear manifold learning algorithms with focus on image processing. A further distinction within non-linear methods is to divide the methods into purely global methods and methods recovering global structure from local information
+only. We structure our review using MNIST dataset and artificial  data, so that effective comparison is between different manifold learning is made. The focus on manifold learning is mainly motivated by the need for methods for
+high-dimensional data analysis and visualization. Texture, shape, orientation and many other aspects of data need to be quantified and compared, and the mathematical theory of smooth manifolds is a natural approach for image processing. In short, this thesis explore use of manifolds and manifold learning, for image analysis and visualization, using two different view: 
+\begin{enumerate}
+\item Dimenion reduction Finding a low-dimensional parameterization of manifold valued data embedded in a high-dimensional space.
+\item Data visualization Visualization of manifold-valued data embedded in a high dimensional space
+\end{enumerate}
+This part provides a concise introduction to the topic of manifold learning and should help to get through the very rich literature and understand weak and strong points of each method.
+
+In third part of my thesis, we use manifold learning algorithms together with methods as applied in the paper by \citep{Mishne2017} to tackle the impostant problem in image processing called anomaly detection. A robust approach to anaomaly detection is  important in target detection in hyper-
+spectral or sonar images,  defect detection, for example in wafer or fabric
+inspection and automation of quality assurance processes, as the user will be shown only suspicious objects.
+
+
+\bibliographystyle{plainnat} 
+\bibliography{./reference/ref}
+
+\end{document}
+

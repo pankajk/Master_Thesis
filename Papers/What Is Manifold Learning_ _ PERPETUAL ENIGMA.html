@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/ -->
+<html lang="en" class="wf-quattrocentosans-n4-active wf-quattrocentosans-i4-active wf-quattrocentosans-i7-active wf-quattrocentosans-n7-active wf-active"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="https://www.linkedin.com/countserv/count/share?format=jsonp&amp;callback=WPCOMSharing.update_linkedin_count&amp;url=https%3A%2F%2Fprateekvjoshi.com%2F2014%2F06%2F21%2Fwhat-is-manifold-learning%2F&amp;_=1496324644808"></script>
+
+<meta name="viewport" content="width=device-width">
+<title>What Is Manifold Learning? | PERPETUAL ENIGMA</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" type="text/css" media="all" href="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/style.css">
+<link rel="pingback" href="https://prateekvjoshi.com/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://s0.wp.com/wp-content/themes/pub/twentyeleven/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<script defer="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/beacon.js"></script><script src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/webfont.js" type="text/javascript" async=""></script><script type="text/javascript">
+  WebFontConfig = {"google":{"families":["Quattrocento+Sans:r:latin,latin-ext","Quattrocento+Sans:r,i,b,bi:latin,latin-ext"]}};
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://s1.wp.com/wp-content/plugins/custom-fonts/js/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+	})();
+</script><style id="jetpack-custom-fonts-css">.wf-active #site-title{font-family:"Quattrocento Sans",sans-serif;font-style:normal;font-weight:400}.wf-active #site-title a{font-weight:400;font-style:normal}@media print{.wf-active #site-title a{font-style:normal;font-weight:400}}.wf-active blockquote, .wf-active body{font-family:"Quattrocento Sans",sans-serif}.wf-active body, .wf-active input, .wf-active textarea{font-family:"Quattrocento Sans",sans-serif}.wf-active blockquote{font-family:"Quattrocento Sans",sans-serif}.wf-active blockquote cite{font-family:"Quattrocento Sans",sans-serif}.wf-active .gallery-caption, .wf-active .wp-caption .wp-caption-text{font-family:"Quattrocento Sans",sans-serif}.wf-active .entry-header .comments-link .leave-reply{font-family:"Quattrocento Sans",sans-serif}.wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6{font-family:"Quattrocento Sans",sans-serif;font-style:normal;font-weight:400}.wf-active .page-title{font-weight:400;font-style:normal}.wf-active .entry-title{font-weight:400;font-style:normal}.wf-active .comment-content h1, .wf-active .comment-content h2, .wf-active .entry-content h1, .wf-active .entry-content h2{font-weight:400;font-style:normal}.wf-active .comment-content h3, .wf-active .entry-content h3{font-style:normal;font-weight:400}.wf-active #author-description h2{font-weight:400;font-style:normal}.wf-active .singular .entry-title{font-weight:400;font-style:normal}.wf-active .error404 .widgettitle{font-style:normal;font-weight:400}.wf-active h1.showcase-heading{font-weight:400;font-style:normal}.wf-active section.recent-posts .other-recent-posts .entry-title{font-style:normal;font-weight:400}.wf-active .widget-title{font-weight:400;font-style:normal}.wf-active .widget_twentyeleven_ephemera .widget-entry-title{font-weight:400;font-style:normal}.wf-active #comments-title{font-weight:400;font-style:normal}.wf-active #reply-title{font-weight:400;font-style:normal}@media print{.wf-active .entry-title, .wf-active .singular .entry-title{font-style:normal;font-weight:400}}</style>
+<meta name="google-site-verification" content="gheyCSQLv_zyxAM2Ib9z53PttAy2aN2cr6mHON59wvI">
+		<script src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/remote-login.php" type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "wordpress_test_cookie=test; path=/";
+				if ( document.cookie.match( /(;|^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin();
+				}
+			}
+		/* ]]> */
+		</script>
+		<link rel="dns-prefetch" href="https://s2.wp.com/">
+<link rel="dns-prefetch" href="https://s1.wp.com/">
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://prateekvjoshi.wordpress.com/">
+<link rel="alternate" type="application/rss+xml" title="PERPETUAL ENIGMA » Feed" href="https://prateekvjoshi.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="PERPETUAL ENIGMA » Comments Feed" href="https://prateekvjoshi.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="PERPETUAL ENIGMA » What Is Manifold Learning? Comments Feed" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/feed/">
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s1.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1488818651h&ver=4.7.5"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="all-css-0-1" href="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/saved_resource" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/saved_resource(1)"></script>
+<link rel="stylesheet" id="all-css-0-2" href="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/style(1).css" type="text/css" media="all">
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://prateekvjoshi.wordpress.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="The Concept Of Homogeneous Coordinates" href="https://prateekvjoshi.com/2014/06/13/the-concept-of-homogeneous-coordinates/">
+<link rel="next" title="What Is A Markov Chain?" href="https://prateekvjoshi.com/2014/06/27/what-is-a-markov-chain/">
+<meta name="generator" content="WordPress.com">
+<link rel="canonical" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/">
+<link rel="shortlink" href="http://wp.me/p2remS-oR">
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=https%3A%2F%2Fprateekvjoshi.com%2F2014%2F06%2F21%2Fwhat-is-manifold-learning%2F&amp;for=wpcom-auto-discovery"><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=https%3A%2F%2Fprateekvjoshi.com%2F2014%2F06%2F21%2Fwhat-is-manifold-learning%2F&amp;for=wpcom-auto-discovery">
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="What Is Manifold Learning?">
+<meta property="og:url" content="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/">
+<meta property="og:description" content="Machine learning is being used extensively in fields like computer vision, natural language processing, and data mining. In many modern applications that are being built, we usually derive a classi…">
+<meta property="article:published_time" content="2014-06-21T07:51:16+00:00">
+<meta property="article:modified_time" content="2014-06-21T07:51:16+00:00">
+<meta property="og:site_name" content="PERPETUAL ENIGMA">
+<meta property="og:image" content="https://prateekvjoshi.files.wordpress.com/2014/06/3-swissroll-unfolded.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:site" content="@P_V_J">
+<meta name="twitter:text:title" content="What Is Manifold Learning?">
+<meta name="twitter:image" content="https://prateekvjoshi.files.wordpress.com/2014/06/1-main2.png?w=240">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@P_V_J">
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom">
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/6b1fd006e5dc0d94119f54c57ac75172?s=32" sizes="16x16">
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/6b1fd006e5dc0d94119f54c57ac75172?s=32" sizes="16x16">
+<link rel="apple-touch-icon-precomposed" href="https://secure.gravatar.com/blavatar/6b1fd006e5dc0d94119f54c57ac75172?s=114">
+<link rel="openid.server" href="https://prateekvjoshi.wordpress.com/?openidserver=1">
+<link rel="openid.delegate" href="https://prateekvjoshi.wordpress.com/">
+<link rel="search" type="application/opensearchdescription+xml" href="https://prateekvjoshi.com/osd.xml" title="PERPETUAL ENIGMA">
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com">
+<meta name="application-name" content="PERPETUAL ENIGMA"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-tooltip" content="PERENNIAL FASCINATION WITH ALL THINGS TECH"><meta name="msapplication-task" content="name=Subscribe;action-uri=https://prateekvjoshi.com/feed/;icon-uri=https://secure.gravatar.com/blavatar/6b1fd006e5dc0d94119f54c57ac75172?s=16"><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="title" content="What Is Manifold Learning? | PERPETUAL ENIGMA on WordPress.com">
+<meta name="description" content="Machine learning is being used extensively in fields like computer vision, natural language processing, and data mining. In many modern applications that are being built, we usually derive a classifier or a model from an extremely large data set. The accuracy of the training algorithms is directly proportional to the amount of data we have.…">
+<link rel="amphtml" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/amp/"><style type="text/css" id="syntaxhighlighteranchor"></style>
+<style type="text/css"></style><link rel="stylesheet" type="text/css" id="gravatar-card-css" href="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/hovercard.css"><link rel="stylesheet" href="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/css" media="all"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/services.css"></head>
+
+<body class="post-template-default single single-post postid-1541 single-format-standard mp6 customizer-styles-applied single-author singular two-column right-sidebar highlander-enabled highlander-light">
+<div id="page" class="hfeed">
+	<header id="branding" role="banner">
+			<hgroup>
+				<h1 id="site-title"><span><a href="https://prateekvjoshi.com/" rel="home">PERPETUAL ENIGMA</a></span></h1>
+				<h2 id="site-description">PERENNIAL FASCINATION WITH ALL THINGS TECH</h2>
+			</hgroup>
+
+			
+								<form method="get" id="searchform" action="https://prateekvjoshi.com/">
+		<label for="s" class="assistive-text">Search</label>
+		<input type="text" class="field" name="s" id="s" placeholder="Search">
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search">
+	</form>
+			
+			<nav id="access" role="navigation">
+				<h3 class="assistive-text">Main menu</h3>
+								<div class="skip-link"><a class="assistive-text" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#content">Skip to primary content</a></div>
+												<div class="menu"><ul>
+<li><a href="https://prateekvjoshi.com/">Home</a></li><li class="page_item page-item-311"><a href="https://prateekvjoshi.com/archives-2/">Archives</a></li>
+<li class="page_item page-item-2"><a href="https://prateekvjoshi.com/about/">About</a></li>
+</ul></div>
+			</nav><!-- #access -->
+	</header><!-- #branding -->
+
+
+	<div id="main">
+
+		<div id="primary">
+			<div id="content" role="main">
+
+				
+					<nav id="nav-single">
+						<h3 class="assistive-text">Post navigation</h3>
+						<span class="nav-previous"><a href="https://prateekvjoshi.com/2014/06/13/the-concept-of-homogeneous-coordinates/" rel="prev"><span class="meta-nav">←</span> Previous</a></span>
+						<span class="nav-next"><a href="https://prateekvjoshi.com/2014/06/27/what-is-a-markov-chain/" rel="next">Next <span class="meta-nav">→</span></a></span>
+					</nav><!-- #nav-single -->
+
+					
+<article id="post-1541" class="post-1541 post type-post status-publish format-standard hentry category-machine-learning tag-pattern-recognition">
+	<header class="entry-header">
+		<h1 class="entry-title">What Is Manifold&nbsp;Learning?</h1>
+
+				<div class="entry-meta">
+						<span class="sep">Posted on </span><a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/" title="12:51 AM" rel="bookmark"><time class="entry-date" datetime="2014-06-21T00:51:16+00:00">June 21, 2014</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="https://prateekvjoshi.com/author/prateekvjoshi/" title="View all posts by Prateek Joshi" rel="author">Prateek Joshi</a></span></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p style="text-align:justify;"><a href="https://prateekvjoshi.files.wordpress.com/2014/06/1-main2.png"><img data-attachment-id="1542" data-permalink="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/1-main-18/" data-orig-file="https://prateekvjoshi.files.wordpress.com/2014/06/1-main2.png" data-orig-size="370,400" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="1 main" data-image-description="" data-medium-file="https://prateekvjoshi.files.wordpress.com/2014/06/1-main2.png?w=278" data-large-file="https://prateekvjoshi.files.wordpress.com/2014/06/1-main2.png?w=370" class="alignleft size-medium wp-image-1542" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/1-main2.png" alt="1 main" width="277" height="300" srcset="https://prateekvjoshi.files.wordpress.com/2014/06/1-main2.png?w=277&amp;h=300 277w, https://prateekvjoshi.files.wordpress.com/2014/06/1-main2.png?w=139&amp;h=150 139w, https://prateekvjoshi.files.wordpress.com/2014/06/1-main2.png 370w" sizes="(max-width: 277px) 100vw, 277px"></a>Machine learning is being used extensively in fields like computer vision, natural language processing, and data mining. In many modern applications that are being built, we usually derive a classifier or a model from an extremely large data set. The accuracy of the training algorithms is directly proportional to the amount of data we have. So most modern data sets often consist of a large number of examples, each of which is made up of many features. Having access to a lot of examples is very useful in extracting a good model from the data, but managing a large number of features is usually a burden to our algorithm. The thing is that some of these features may be irrelevant, so it’s important to make sure the final model doesn’t get affected by this. If the feature sets are complex, then our algorithm will be slowed down and it will be very difficult to find the global optimum. Given this situation, a good way to approach it would be to reduce the number of features we have. But if we do that in a careless manner, we might end up losing information. We want to reduce the number of features while retaining the maximum amount of information. Now what does it have to with manifold learning? Why do we care about reducing the dimensionality of our data? &nbsp;<span id="more-1541"></span></p>
+<p style="text-align:justify;"><strong>First of all, what is “dimensionality”?</strong></p>
+<p style="text-align:justify;">Dimensionality refers to the minimum number of coordinates needed to specify any point within a space or an object. So a line has a dimensionality of 1&nbsp;because only one coordinate is needed to specify a point on it. If you consider the number line, you can just pick a number and you’ll know where it is. A planar surface, on the other hand, has a dimensionality of 2&nbsp;because two coordinates are needed to specify a point on it. So trying to&nbsp;locate ‘5’ on a surface is meaningless because you need to specify the other coordinate too. To give a fairly rudimentary example, let’s consider a classroom. To identify someone uniquely, you need both the first name and the last name. Sometimes, the first name and last name of two students can be the same, so we may want the middle name as well. So the dimensionality for this case can be considered 3.</p>
+<p><strong>What is dimensionality reduction?</strong></p>
+<p style="text-align:justify;"><a href="https://prateekvjoshi.files.wordpress.com/2014/06/4-dimensionality-reduction.jpg"><img data-attachment-id="1543" data-permalink="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/4-dimensionality-reduction/" data-orig-file="https://prateekvjoshi.files.wordpress.com/2014/06/4-dimensionality-reduction.jpg" data-orig-size="482,557" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="4 dimensionality reduction" data-image-description="" data-medium-file="https://prateekvjoshi.files.wordpress.com/2014/06/4-dimensionality-reduction.jpg?w=260" data-large-file="https://prateekvjoshi.files.wordpress.com/2014/06/4-dimensionality-reduction.jpg?w=482" class="alignleft size-medium wp-image-1543" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/4-dimensionality-reduction.jpg" alt="4 dimensionality reduction" width="259" height="300" srcset="https://prateekvjoshi.files.wordpress.com/2014/06/4-dimensionality-reduction.jpg?w=259&amp;h=300 259w, https://prateekvjoshi.files.wordpress.com/2014/06/4-dimensionality-reduction.jpg?w=130&amp;h=150 130w, https://prateekvjoshi.files.wordpress.com/2014/06/4-dimensionality-reduction.jpg 482w" sizes="(max-width: 259px) 100vw, 259px"></a>The reason we are discussing this is because every&nbsp;form of data&nbsp;has to be converted to a feature set before we analyze it. As in, if you want to analyze images, we need to convert it into a form that can be used by the machine learning algorithms. This process is called feature extraction. If you want to keep the feature set simple, then it is bound to have low dimensionality. While this is good from a complexity point of view, the feature set&nbsp;may not be unique and distinct. In our earlier example, it’s like picking only the first name. You will not be able to uniquely identify everybody in the class. On the other hand, if you keep the dimensionality high, it will be nice and unique but it may not be easy to analyze because of the complexity involved.</p>
+<p style="text-align:justify;">Apart from simplifying data, dimensionality reduction has other uses as well. Let’s consider the visualization process for a minute here. If the data lies in a 100-dimensional space, we cannot get an intuitive feel for what the data looks like. We can barely manage to imagine the 4th dimension, let alone visualizing the 100th! However, if a meaningful two or three dimensional representation of the data can be found, then it is possible to visualize it. Though this may seem like a trivial point, many statistical and machine learning algorithms have very poor optimality guarantees, so the ability to actually see the data and the output of an algorithm is of great practical interest.</p>
+<p style="text-align:justify;"><strong>How do we reduce the dimensionality?</strong></p>
+<p style="text-align:justify;">There are many approaches to dimensionality reduction based on a variety of assumptions. We will focus on an approach based on the observation that high-dimensional data is often much simpler than the dimensionality would indicate. If you consider our classroom example, somebody may come up with a 50-dimensional feature to uniquely identify each student. The feature set can include name, address, age, weight, height, etc. While it may serve our purpose, the data distribution will end up being very complex.</p>
+<p style="text-align:justify;">A given high-dimensional data set may contain many features that are all measurements of the same underlying cause. Hence, they are closely related to each other. For example, this can happen when you are taking video footage of a single object from multiple angles simultaneously. As you can imagine, there will be a lot of overlap in the information captured by all those cameras. Keeping all that data would be redundant and would only serve to slow down our system. It would be helpful to get a simplified and non-overlapping representation of the data whose features can be identified with the underlying parameters that govern the data.</p>
+<p style="text-align:justify;">The intuition in the previous paragraph is formalized using the notion of a “manifold”. The data set lies along a low-dimensional manifold embedded in a high-dimensional space, where the low-dimensional space reflects the underlying parameters and high-dimensional space is the feature space. Attempting to uncover this manifold structure in a data set is referred to as manifold learning. Manifold learning is a non-linear dimensionality reduction technique. So in order to discuss that, we need to understand what linear dimensionality reduction is.</p>
+<p style="text-align:justify;"><strong>What is linear dimensionality reduction?</strong></p>
+<p style="text-align:justify;">Perhaps the most popular algorithm for dimensionality reduction is Principal Component Analysis (PCA). Given a data set, PCA finds the directions along which the data has maximum variance in addition to the relative importance of these directions. For example, suppose that we feed a set of three-dimensional points that all lie on a two-dimensional plane to PCA. PCA will return two vectors that span the plane along with a third vector that is orthogonal to the plane. The two vectors that span the plane will be given a positive weight, but the third vector will have a weight of zero, since the data does not vary along that direction. PCA is most useful in the case when data lies on or close to a linear sub-space of the data set. Given this type of data, PCA will find a basis for the linear subspace and allow one to disregard the irrelevant features. I have discussed more about it <a href="https://prateekvjoshi.com/2012/09/21/principal-component-analysis/">here</a>.</p>
+<p style="text-align:justify;"><strong>What exactly is manifold learning?</strong></p>
+<p style="text-align:justify;">It would be weird to go through this entire post and not know what “manifold” means. A manifold is an extremely important concept in mathematics. In layman’s terms, you can think of it as a surface of any shape. It doesn’t necessarily have to be a plane i.e. it can be shaped like a folded sheet with all the curves. This is generalized to ‘n’ dimensions and formalized as “manifold” in mathematics. If you are interested, you can just google it and read more about it. There are a lot of cool visualizations available on the web.</p>
+<p style="text-align:justify;"><a href="https://prateekvjoshi.files.wordpress.com/2014/06/2-swissroll.jpg"><img data-attachment-id="1544" data-permalink="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/2-swissroll/" data-orig-file="https://prateekvjoshi.files.wordpress.com/2014/06/2-swissroll.jpg" data-orig-size="512,512" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="2 swissroll" data-image-description="" data-medium-file="https://prateekvjoshi.files.wordpress.com/2014/06/2-swissroll.jpg?w=300&amp;h=300" data-large-file="https://prateekvjoshi.files.wordpress.com/2014/06/2-swissroll.jpg?w=512" class="alignleft size-medium wp-image-1544" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/2-swissroll.jpg" alt="2 swissroll" width="300" height="300" srcset="https://prateekvjoshi.files.wordpress.com/2014/06/2-swissroll.jpg?w=300&amp;h=300 300w, https://prateekvjoshi.files.wordpress.com/2014/06/2-swissroll.jpg?w=150&amp;h=150 150w, https://prateekvjoshi.files.wordpress.com/2014/06/2-swissroll.jpg 512w" sizes="(max-width: 300px) 100vw, 300px"></a>We are now ready to discuss manifold learning. The manifold learning algorithms can be viewed as the non-linear version of PCA. We have discussed the importance of dimensionality reduction. If you think about approaches like PCA, you will realize that we are projecting the data onto some low-dimensional surface. But this is restrictive in the sense that those surfaces are all linear. What if the the best representation lies in some weirdly shaped surface? PCA will totally miss that. As you can see in this figure here, the data points are distributed in the shape of swiss roll. PCA wouldn’t work very well in this situation because it will look for a planar surface to describe this data. But the problem is that the planar surface doesn’t exist. So we end up with some sub-optimal representation of the data. Manifold learning solves this problem very efficiently.</p>
+<p><strong>How do we visualize it?</strong></p>
+<p style="text-align:justify;"><a href="https://prateekvjoshi.files.wordpress.com/2014/06/3-swissroll-unfolded.png"><img data-attachment-id="1545" data-permalink="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/3-swissroll-unfolded/" data-orig-file="https://prateekvjoshi.files.wordpress.com/2014/06/3-swissroll-unfolded.png?w=584" data-orig-size="273,254" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="3 swissroll unfolded" data-image-description="" data-medium-file="https://prateekvjoshi.files.wordpress.com/2014/06/3-swissroll-unfolded.png?w=584?w=273" data-large-file="https://prateekvjoshi.files.wordpress.com/2014/06/3-swissroll-unfolded.png?w=584?w=273" class="alignleft size-full wp-image-1545" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/3-swissroll-unfolded.png" alt="3 swissroll unfolded" srcset="https://prateekvjoshi.files.wordpress.com/2014/06/3-swissroll-unfolded.png 273w, https://prateekvjoshi.files.wordpress.com/2014/06/3-swissroll-unfolded.png?w=150 150w" sizes="(max-width: 273px) 100vw, 273px"></a>Algorithms for this task are based on the idea that the dimensionality of many data sets is only artificially high. Although the data points may consist of thousands of features, they may be described as a function of only a few underlying parameters. That is, the data points are actually samples from a low-dimensional manifold that is embedded in a high-dimensional space. Manifold learning algorithms attempt to uncover these parameters in order to find a low-dimensional representation of the data. There are a lot of approaches to solve this problem like Isomap, Locally Linear Embedding, Laplacian Eigenmaps, Semidefinite Embedding, etc. These algorithms works towards extracting the low-dimensional manifold that can be used to describe the high-dimensional data.</p>
+<p>————————————————————————————————-</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1541" class="share-twitter sd-button share-icon" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-linkedin"><a rel="nofollow" data-shared="sharing-linkedin-1541" class="share-linkedin sd-button share-icon" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?share=linkedin&amp;nb=1" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1541" class="share-facebook sd-button share-icon" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?share=facebook&amp;nb=1" target="_blank" title="Share on Facebook"><span>Facebook<span class="share-count">3</span></span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1541" class="share-google-plus-1 sd-button share-icon" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?share=google-plus-1&amp;nb=1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?share=reddit&amp;nb=1" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-end"></li></ul></div></div></div><div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-loaded" id="like-post-wrapper-36042762-1541-59301a242b065" data-src="//widgets.wp.com/likes/#blog_id=36042762&amp;post_id=1541&amp;origin=prateekvjoshi.wordpress.com&amp;obj_id=36042762-1541-59301a242b065" data-name="like-post-frame-36042762-1541-59301a242b065"><h3 class="sd-title">Like this:</h3><div class="likes-widget-placeholder post-likes-widget-placeholder" style="height: 55px; display: none;"><span class="button"><span>Like</span></span> <span class="loading">Loading...</span></div><iframe class="post-likes-widget jetpack-likes-widget" name="like-post-frame-36042762-1541-59301a242b065" height="55px" width="100%" frameborder="0" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/saved_resource.html"></iframe><span class="sd-text-color"></span><a class="sd-link-color"></a></div>
+<div id="jp-relatedposts" class="jp-relatedposts" style="display: block;">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<div class="jp-relatedposts-items jp-relatedposts-items-minimal"><p class="jp-relatedposts-post jp-relatedposts-post0" data-post-id="1480" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://prateekvjoshi.com/2014/05/05/what-is-adaboost/" title="What Is AdaBoost?
+
+AdaBoost is short for Adaptive Boosting. It is basically a machine learning algorithm that is used as a classifier. Whenever you have a large amount of data and you want divide it into different categories, we need a good classification algorithm to do it. We usually use AdaBoost in conjunction with…" rel="nofollow" data-origin="1541" data-position="0">What Is AdaBoost?</a></span><span class="jp-relatedposts-post-context">In "Machine Learning"</span></p><p class="jp-relatedposts-post jp-relatedposts-post1" data-post-id="843" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://prateekvjoshi.com/2013/06/09/overfitting-in-machine-learning/" title="Overfitting In Machine Learning
+
+Let&#39;s say you are given a small set of data points. These data points can take any form like weight distribution of people, location of people who buy your products, types of smartphones, etc. Now your job is to estimate the underlying model. As in, if an unknown point comes…" rel="nofollow" data-origin="1541" data-position="1">Overfitting In Machine Learning</a></span><span class="jp-relatedposts-post-context">In "Machine Learning"</span></p><p class="jp-relatedposts-post jp-relatedposts-post2" data-post-id="667" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://prateekvjoshi.com/2012/12/20/bayesian-classifier/" title="Bayesian Classifier
+
+In machine learning, classification is the process of identifying the category of an unknown input based on the set of categories we already have. A classifier, as the name suggests, classifies things into multiple categories. It is used in various real life situations like face detection, image search, fingerprint recognition, etc.…" rel="nofollow" data-origin="1541" data-position="2">Bayesian Classifier</a></span><span class="jp-relatedposts-post-context">In "Machine Learning"</span></p></div></div></div>			</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+		This entry was posted in <a href="https://prateekvjoshi.com/category/machine-learning/" rel="category tag">Machine Learning</a> and tagged <a href="https://prateekvjoshi.com/tag/pattern-recognition/" rel="tag">Pattern Recognition</a> by <a href="https://prateekvjoshi.com/author/prateekvjoshi/">Prateek Joshi</a>. Bookmark the <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/" title="Permalink to What Is Manifold Learning?" rel="bookmark">permalink</a>.		
+			</footer><!-- .entry-meta -->
+</article><!-- #post-1541 -->
+
+						<div id="comments">
+	
+	
+			<h2 id="comments-title">
+			24 thoughts on “<span>What Is Manifold&nbsp;Learning?</span>”		</h2>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1 highlander-comment" id="li-comment-7196">
+		<article id="comment-7196" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/9e4d131138f654f42364d17530dfed8d" class="avatar avatar-68 grav-hashed grav-hijack" height="68" width="68" id="grav-9e4d131138f654f42364d17530dfed8d-0"><span class="fn"><a href="http://essay-services.org/" rel="external nofollow" class="url">research writing reiews</a></span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-7196"><time datetime="2014-07-20T21:57:39+00:00">July 20, 2014 at 9:57 PM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>all the time i used to read smaller articles or reviews that as well clear<br>
+their motive, and that is also happening with this piece of writing<br>
+which I am reading at this time.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=7196#respond" onclick="return addComment.moveForm( &quot;comment-7196&quot;, &quot;7196&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to research writing reiews">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-prateekvjoshi bypostauthor odd alt depth-2 highlander-comment" id="li-comment-8270">
+		<article id="comment-8270" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/5c814584ded7c3777f2b14af8575f4e8" class="avatar avatar-39 grav-hashed grav-hijack" height="39" width="39" id="grav-5c814584ded7c3777f2b14af8575f4e8-0"><span class="fn"><a href="https://prateekvjoshi.wordpress.com/" rel="external nofollow" class="url">Prateek Joshi</a></span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-8270"><time datetime="2014-09-10T13:23:15+00:00">September 10, 2014 at 1:23 PM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thanks</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=8270#respond" onclick="return addComment.moveForm( &quot;comment-8270&quot;, &quot;8270&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to Prateek Joshi">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1 highlander-comment" id="li-comment-7856">
+		<article id="comment-7856" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/75425539dddcb9d7e20fe7b0a7b2ad17" class="avatar avatar-68 grav-hashed grav-hijack" height="68" width="68" id="grav-75425539dddcb9d7e20fe7b0a7b2ad17-0"><span class="fn"><a href="http://www.test.com/" rel="external nofollow" class="url">how to get a google plus account</a></span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-7856"><time datetime="2014-08-23T20:29:32+00:00">August 23, 2014 at 8:29 PM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hey There. I found your blog using msn. This is a very well written article.<br>
+I will be sure to bookmark it and come back to read more of your useful info.<br>
+Thanks for the post. I will certainly return.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=7856#respond" onclick="return addComment.moveForm( &quot;comment-7856&quot;, &quot;7856&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to how to get a google plus account">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-prateekvjoshi bypostauthor odd alt depth-2 highlander-comment" id="li-comment-8269">
+		<article id="comment-8269" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/5c814584ded7c3777f2b14af8575f4e8" class="avatar avatar-39 grav-hashed grav-hijack" height="39" width="39" id="grav-5c814584ded7c3777f2b14af8575f4e8-1"><span class="fn"><a href="https://prateekvjoshi.wordpress.com/" rel="external nofollow" class="url">Prateek Joshi</a></span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-8269"><time datetime="2014-09-10T13:23:06+00:00">September 10, 2014 at 1:23 PM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thanks! Glad to hear that you found it useful.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=8269#respond" onclick="return addComment.moveForm( &quot;comment-8269&quot;, &quot;8269&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to Prateek Joshi">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 highlander-comment" id="li-comment-8255">
+		<article id="comment-8255" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/895ee055ff6fd0ee63aed5f39926f7a5" class="avatar avatar-68 grav-hashed grav-hijack" height="68" width="68" id="grav-895ee055ff6fd0ee63aed5f39926f7a5-0"><span class="fn"><a href="http://www.lazada.co.th/cotton-soft-red-base-soft-6-5-179272.html" rel="external nofollow" class="url">ชุดผ้าปูที่นอน</a></span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-8255"><time datetime="2014-09-10T07:26:07+00:00">September 10, 2014 at 7:26 AM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I relish, lead to I discovered exactly what I used<br>
+to be having a look for. You have ended my four day<br>
+lengthy hunt! God Bless you man. Have a great<br>
+day. Bye</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=8255#respond" onclick="return addComment.moveForm( &quot;comment-8255&quot;, &quot;8255&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to ชุดผ้าปูที่นอน">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-prateekvjoshi bypostauthor odd alt depth-2 highlander-comment" id="li-comment-8268">
+		<article id="comment-8268" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/5c814584ded7c3777f2b14af8575f4e8" class="avatar avatar-39 grav-hashed grav-hijack" height="39" width="39" id="grav-5c814584ded7c3777f2b14af8575f4e8-2"><span class="fn"><a href="https://prateekvjoshi.wordpress.com/" rel="external nofollow" class="url">Prateek Joshi</a></span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-8268"><time datetime="2014-09-10T13:22:37+00:00">September 10, 2014 at 1:22 PM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thanks! Happy to hear that you found it useful.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=8268#respond" onclick="return addComment.moveForm( &quot;comment-8268&quot;, &quot;8268&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to Prateek Joshi">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1 highlander-comment" id="li-comment-8257">
+		<article id="comment-8257" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/676c9ec643bbda28213e0fd56dd75da4" class="avatar avatar-68 grav-hashed grav-hijack" height="68" width="68" id="grav-676c9ec643bbda28213e0fd56dd75da4-0"><span class="fn"><a href="http://bitly.com/1nL5tEw" rel="external nofollow" class="url">ps2soccer</a></span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-8257"><time datetime="2014-09-10T08:11:55+00:00">September 10, 2014 at 8:11 AM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>You explain the topic in a way that everyone can understand easily. Thank you very much!</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=8257#respond" onclick="return addComment.moveForm( &quot;comment-8257&quot;, &quot;8257&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to ps2soccer">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-prateekvjoshi bypostauthor odd alt depth-2 highlander-comment" id="li-comment-8271">
+		<article id="comment-8271" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/5c814584ded7c3777f2b14af8575f4e8" class="avatar avatar-39 grav-hashed grav-hijack" height="39" width="39" id="grav-5c814584ded7c3777f2b14af8575f4e8-3"><span class="fn"><a href="https://prateekvjoshi.wordpress.com/" rel="external nofollow" class="url">Prateek Joshi</a></span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-8271"><time datetime="2014-09-10T13:23:54+00:00">September 10, 2014 at 1:23 PM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thanks! I’m glad that you found it useful.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=8271#respond" onclick="return addComment.moveForm( &quot;comment-8271&quot;, &quot;8271&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to Prateek Joshi">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 highlander-comment" id="li-comment-8310">
+		<article id="comment-8310" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/db02d299f05f9f521445debf232508c3" class="avatar avatar-68 grav-hashed grav-hijack" height="68" width="68" id="grav-db02d299f05f9f521445debf232508c3-0"><span class="fn"><a href="http://dill.zjtcm.net/userinfo.php?uid=321483" rel="external nofollow" class="url">dill.zjtcm.net</a></span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-8310"><time datetime="2014-09-11T10:34:40+00:00">September 11, 2014 at 10:34 AM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I have read so many posts on the topic of the blogger lovers except this<br>
+post is really a nice piece of writing, keep it up.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=8310#respond" onclick="return addComment.moveForm( &quot;comment-8310&quot;, &quot;8310&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to dill.zjtcm.net">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-prateekvjoshi bypostauthor odd alt depth-2 highlander-comment" id="li-comment-8312">
+		<article id="comment-8312" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/5c814584ded7c3777f2b14af8575f4e8" class="avatar avatar-39 grav-hashed grav-hijack" height="39" width="39" id="grav-5c814584ded7c3777f2b14af8575f4e8-4"><span class="fn"><a href="https://prateekvjoshi.wordpress.com/" rel="external nofollow" class="url">Prateek Joshi</a></span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-8312"><time datetime="2014-09-11T10:53:42+00:00">September 11, 2014 at 10:53 AM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thanks!</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=8312#respond" onclick="return addComment.moveForm( &quot;comment-8312&quot;, &quot;8312&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to Prateek Joshi">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1 highlander-comment" id="li-comment-8416">
+		<article id="comment-8416" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/01aec8cc9f7253c72f8718c70b435fa3" class="avatar avatar-68 grav-hashed grav-hijack" height="68" width="68" id="grav-01aec8cc9f7253c72f8718c70b435fa3-0"><span class="fn"><a href="http://www.life-inbloom.com/2012/09/daily-menu-exercise-routine.html" rel="external nofollow" class="url">download iOS 8 beta 6</a></span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-8416"><time datetime="2014-09-15T22:40:49+00:00">September 15, 2014 at 10:40 PM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I believе tɦаt іs аmong the ѕo much vital info foг me.<br>
+And i’m happy reading your article. But shoսld statement оn some general issues,<br>
+The site taste is ideal, the articles іs in reality excellent<br>
+: D. Excellent activity, cheers</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=8416#respond" onclick="return addComment.moveForm( &quot;comment-8416&quot;, &quot;8416&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to download iOS 8 beta 6">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1 highlander-comment" id="li-comment-8916">
+		<article id="comment-8916" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/bf0824672bd4e6358659c5346ccbb635" class="avatar avatar-68 grav-hashed grav-hijack" height="68" width="68" id="grav-bf0824672bd4e6358659c5346ccbb635-0"><span class="fn"><a href="http://viciousdogsnoho.com/" rel="external nofollow" class="url">Lenora</a></span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-8916"><time datetime="2014-09-28T07:08:24+00:00">September 28, 2014 at 7:08 AM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Good day! I could have sworn I’ve visited this blog before but after<br>
+looking at a few of the articles I realized it’s new to me.<br>
+Anyways, I’m definitely pleased I discovered it and I’ll be book-marking it and checking back frequently!</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=8916#respond" onclick="return addComment.moveForm( &quot;comment-8916&quot;, &quot;8916&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to Lenora">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="post pingback">
+		<p>Pingback: <a href="https://prateekvjoshi.com/2014/10/18/autoencoders-in-machine-learning/" rel="external nofollow" class="url">Autoencoders In Machine Learning | Perpetual Enigma</a></p>
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1 highlander-comment" id="li-comment-15312">
+		<article id="comment-15312" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/d0ae7a3d906b223fc7508a5b02ee6b64" class="avatar avatar-68 grav-hashed grav-hijack" height="68" width="68" id="grav-d0ae7a3d906b223fc7508a5b02ee6b64-0"><span class="fn">Madhav</span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-15312"><time datetime="2015-06-10T06:37:03+00:00">June 10, 2015 at 6:37 AM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi Prateek</p>
+<p>Awesome article !I was wondering if you could give me some examples of data that lie on a manifold? Secondly, how do you know for sure that the data resides on a manifold instead of a hyperplane?</p>
+<p>– Madhav</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=15312#respond" onclick="return addComment.moveForm( &quot;comment-15312&quot;, &quot;15312&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to Madhav">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1 highlander-comment" id="li-comment-15440">
+		<article id="comment-15440" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/f2f8edaa43cfa6bd25f6c655b3463b48" class="avatar avatar-68 grav-hashed grav-hijack" height="68" width="68" id="grav-f2f8edaa43cfa6bd25f6c655b3463b48-0"><span class="fn">Muneer</span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-15440"><time datetime="2015-06-18T18:38:33+00:00">June 18, 2015 at 6:38 PM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I just got what manifold means ! thank you very much ……… it is not enough to say that but I barely speak English</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=15440#respond" onclick="return addComment.moveForm( &quot;comment-15440&quot;, &quot;15440&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to Muneer">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1 highlander-comment" id="li-comment-17656">
+		<article id="comment-17656" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/a1d78d7509237a20703366267491206c" class="avatar avatar-68 grav-hashed grav-hijack" height="68" width="68" id="grav-a1d78d7509237a20703366267491206c-0"><span class="fn">giorgos tsigounis</span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-17656"><time datetime="2016-05-16T06:24:01+00:00">May 16, 2016 at 6:24 AM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>This is so great and intuitive! Thanks a lot for such a good explanation</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=17656#respond" onclick="return addComment.moveForm( &quot;comment-17656&quot;, &quot;17656&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to giorgos tsigounis">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-prateekvjoshi bypostauthor odd alt depth-2 highlander-comment" id="li-comment-17660">
+		<article id="comment-17660" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/5c814584ded7c3777f2b14af8575f4e8" class="avatar avatar-39 grav-hashed grav-hijack" height="39" width="39" id="grav-5c814584ded7c3777f2b14af8575f4e8-5"><span class="fn"><a href="https://prateekvjoshi.wordpress.com/" rel="external nofollow" class="url">Prateek Joshi</a></span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-17660"><time datetime="2016-05-16T09:52:49+00:00">May 16, 2016 at 9:52 AM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thanks! Glad you found it helpful <img draggable="false" class="emoji" alt="🙂" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/1f642.svg"></p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=17660#respond" onclick="return addComment.moveForm( &quot;comment-17660&quot;, &quot;17660&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to Prateek Joshi">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-fallee even thread-even depth-1 highlander-comment" id="li-comment-18066">
+		<article id="comment-18066" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/fb88c3d4ca9b96d1140684800ff5c4cd" class="avatar avatar-68 grav-hashed grav-hijack" height="68" width="68" id="grav-fb88c3d4ca9b96d1140684800ff5c4cd-0"><span class="fn"><a href="http://twitter.com/fakhirahdg" rel="external nofollow" class="url">فاخرة</a></span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-18066"><time datetime="2016-10-18T00:35:21+00:00">October 18, 2016 at 12:35 AM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Reblogged this on <a href="https://kurraasah.wordpress.com/2016/10/18/what-is-manifold-learning/" rel="nofollow">Muslimah's notes</a>.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=18066#respond" onclick="return addComment.moveForm( &quot;comment-18066&quot;, &quot;18066&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to فاخرة">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="li-comment-18070">
+		<article id="comment-18070" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/2c2da84fc838318a7618fe38d13ec31c_normal.jpeg" class="avatar avatar-68" height="68" width="68"><span class="fn"><a href="http://twitter.com/0cool75" rel="external nofollow" class="url">Krishna B (@0cool75)</a></span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-18070"><time datetime="2016-10-19T20:02:42+00:00">October 19, 2016 at 8:02 PM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thanks for the article. I always find this idea of embedding a lower dimensional surface within a higher dimensional space confusing. Your description of the classroom was really helpful there. Thanks for writing out this article.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=18070#respond" onclick="return addComment.moveForm( &quot;comment-18070&quot;, &quot;18070&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to Krishna B (@0cool75)">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 highlander-comment" id="li-comment-18142">
+		<article id="comment-18142" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/7dadff5c105d8d794b0e23edad2046f1" class="avatar avatar-68 grav-hashed grav-hijack" height="68" width="68" id="grav-7dadff5c105d8d794b0e23edad2046f1-0"><span class="fn">Saba</span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-18142"><time datetime="2016-11-17T23:01:03+00:00">November 17, 2016 at 11:01 PM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thank you for this! I am new to Machine learning and this article was extremely helpful in getting me started on Manifold Learning. You’re a lifesaver!</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=18142#respond" onclick="return addComment.moveForm( &quot;comment-18142&quot;, &quot;18142&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to Saba">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-shibonoids odd alt thread-odd thread-alt depth-1 highlander-comment" id="li-comment-18226">
+		<article id="comment-18226" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/83fd7ad12846ffde85ee87314ef05e46" class="avatar avatar-68 grav-hashed grav-hijack" height="68" width="68" id="grav-83fd7ad12846ffde85ee87314ef05e46-0"><span class="fn"><a href="http://gravatar.com/shibonoids" rel="external nofollow" class="url">Shibon Skaria</a></span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-18226"><time datetime="2016-12-14T22:58:19+00:00">December 14, 2016 at 10:58 PM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Excellent article and clearly explained! Thank you very much.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=18226#respond" onclick="return addComment.moveForm( &quot;comment-18226&quot;, &quot;18226&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to Shibon Skaria">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-prateekvjoshi bypostauthor even depth-2 highlander-comment" id="li-comment-18230">
+		<article id="comment-18230" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/5c814584ded7c3777f2b14af8575f4e8" class="avatar avatar-39 grav-hashed grav-hijack" height="39" width="39" id="grav-5c814584ded7c3777f2b14af8575f4e8-6"><span class="fn"><a href="http://prateekvjoshi.com/" rel="external nofollow" class="url">Prateek Joshi</a></span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-18230"><time datetime="2016-12-15T11:58:38+00:00">December 15, 2016 at 11:58 AM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thanks, Shibon. Glad you liked it.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=18230#respond" onclick="return addComment.moveForm( &quot;comment-18230&quot;, &quot;18230&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to Prateek Joshi">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1 highlander-comment" id="li-comment-18515">
+		<article id="comment-18515" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/dae717d7b11c3ffd645b6a41be06c93b" class="avatar avatar-68 grav-hashed grav-hijack" height="68" width="68" id="grav-dae717d7b11c3ffd645b6a41be06c93b-0"><span class="fn">Lukas Bruckner</span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-18515"><time datetime="2017-03-14T01:56:19+00:00">March 14, 2017 at 1:56 AM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Prateek, this is a great and clear explanation that has helped me a lot. I would have suggested you write a book someday, but just found out you already have – I’ll be sure to get one! Thanks a lot!</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=18515#respond" onclick="return addComment.moveForm( &quot;comment-18515&quot;, &quot;18515&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to Lukas Bruckner">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-prateekvjoshi bypostauthor even depth-2 highlander-comment" id="li-comment-18516">
+		<article id="comment-18516" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/5c814584ded7c3777f2b14af8575f4e8" class="avatar avatar-39 grav-hashed grav-hijack" height="39" width="39" id="grav-5c814584ded7c3777f2b14af8575f4e8-7"><span class="fn"><a href="http://prateekvjoshi.com/" rel="external nofollow" class="url">Prateek Joshi</a></span> on <a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-18516"><time datetime="2017-03-15T09:41:13+00:00">March 15, 2017 at 9:41 AM</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thanks, Lukas. Good to know that you enjoyed reading the blog post.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/?replytocom=18516#respond" onclick="return addComment.moveForm( &quot;comment-18516&quot;, &quot;18516&quot;, &quot;respond&quot;, &quot;1541&quot; )" aria-label="Reply to Prateek Joshi">Reply <span>↓</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		</ol>
+
+		
+		
+	
+		<div id="respond" class="comment-respond js">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://prateekvjoshi.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="6725e0f14a"><input type="hidden" name="_wp_http_referer" value="/2014/06/21/what-is-manifold-learning/">
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest">
+
+<div class="comment-form-field comment-textarea">
+	
+	<div id="comment-form-comment"><textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; transition: none; height: 0px !important; min-height: 0px !important; font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif; font-size: 14px; font-weight: 300; font-style: normal; letter-spacing: 0px; text-transform: none; text-decoration: none solid rgba(0, 0, 0, 0.7); word-spacing: 0px; text-indent: 0px; line-height: 22.75px; width: 614px;" class="autosizejs "></textarea><textarea id="comment" name="comment" title="Enter your comment here..." placeholder="Enter your comment here..." style="height: 42px; overflow: hidden; word-wrap: break-word; resize: none;"></textarea></div>
+</div>
+
+<div id="comment-form-identity" style="display: none;">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+		</li></ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/ad516503a11cd5ca435acc9bb6523536" alt="Gravatar" width="25" class="no-grav">
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value=""></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value=""></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="url" value=""></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/ad516503a11cd5ca435acc9bb6523536" alt="WordPress.com Logo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="">
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="">
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="">
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your WordPress.com account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;wordpress&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/ad516503a11cd5ca435acc9bb6523536" alt="Twitter picture" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="">
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="">
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="">
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;twitter&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/ad516503a11cd5ca435acc9bb6523536" alt="Facebook photo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="">
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="">
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="">
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;facebook&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/ad516503a11cd5ca435acc9bb6523536" alt="Google+ photo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="">
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="">
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="">
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;googleplus&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe" style="display: none;">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;"> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of new comments via email.</label></p></div>
+
+
+
+
+<p class="form-submit" style="display: none;"><input name="submit" type="submit" id="comment-submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="1541" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="0d5b118279"></p>
+<input type="hidden" name="genseq" value="1496324644">
+<p style="display: none;"></p>			<input type="hidden" id="ak_js" name="ak_js" value="1496324645274"></form>
+			</div><!-- #respond -->
+	<div style="clear: both"></div>
+</div><!-- #comments -->
+
+				
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+
+	</div><!-- #main -->
+
+	<footer id="colophon" role="contentinfo">
+
+			
+
+			<div id="site-generator">
+				 				<a href="https://wordpress.com/?ref=footer_blog">Blog at WordPress.com.</a>
+			</div>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<!--  -->
+<script type="text/javascript" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/gprofiles.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/wpgroho.js"></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-9e4d131138f654f42364d17530dfed8d">
+	</div>
+	<div class="grofile-hash-map-5c814584ded7c3777f2b14af8575f4e8">
+	</div>
+	<div class="grofile-hash-map-75425539dddcb9d7e20fe7b0a7b2ad17">
+	</div>
+	<div class="grofile-hash-map-895ee055ff6fd0ee63aed5f39926f7a5">
+	</div>
+	<div class="grofile-hash-map-676c9ec643bbda28213e0fd56dd75da4">
+	</div>
+	<div class="grofile-hash-map-db02d299f05f9f521445debf232508c3">
+	</div>
+	<div class="grofile-hash-map-01aec8cc9f7253c72f8718c70b435fa3">
+	</div>
+	<div class="grofile-hash-map-bf0824672bd4e6358659c5346ccbb635">
+	</div>
+	<div class="grofile-hash-map-d0ae7a3d906b223fc7508a5b02ee6b64">
+	</div>
+	<div class="grofile-hash-map-f2f8edaa43cfa6bd25f6c655b3463b48">
+	</div>
+	<div class="grofile-hash-map-a1d78d7509237a20703366267491206c">
+	</div>
+	<div class="grofile-hash-map-fb88c3d4ca9b96d1140684800ff5c4cd">
+	</div>
+	<div class="grofile-hash-map-746f1def7e58cb9b37bb65cf0138384a">
+	</div>
+	<div class="grofile-hash-map-7dadff5c105d8d794b0e23edad2046f1">
+	</div>
+	<div class="grofile-hash-map-83fd7ad12846ffde85ee87314ef05e46">
+	</div>
+	<div class="grofile-hash-map-dae717d7b11c3ffd645b6a41be06c93b">
+	</div>
+	</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/prateekvjoshi.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/prateekvjoshi.wordpress.com\/wp-login.php?action=logout&_wpnonce=ef797e3032","homeURL":"https:\/\/prateekvjoshi.com\/","postID":"1541","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"0","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/saved_resource(2)"></script>
+
+	<div id="carousel-reblog-box">
+		<form action="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#" name="carousel-reblog">
+			<textarea id="carousel-reblog-content" name="carousel-reblog-content" placeholder="Add your thoughts here... (optional)"></textarea>
+			<label for="carousel-reblog-to-blog-id" id="carousel-reblog-lblogid">Post to</label>
+			<select name="carousel-reblog-to-blog-id" id="carousel-reblog-to-blog-id">
+						</select>
+
+			<div class="submit">
+				<span class="canceltext"><a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/#" class="cancel">Cancel</a></span>
+				<input type="submit" name="carousel-reblog-submit" class="button" id="carousel-reblog-submit" value="Reblog Post">
+				<input type="hidden" id="carousel-reblog-blog-id" value="36042762">
+				<input type="hidden" id="carousel-reblog-blog-url" value="https://prateekvjoshi.com">
+				<input type="hidden" id="carousel-reblog-blog-title" value="PERPETUAL ENIGMA">
+				<input type="hidden" id="carousel-reblog-post-url" value="">
+				<input type="hidden" id="carousel-reblog-post-title" value="">
+			</div>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="d604af7742"><input type="hidden" name="_wp_http_referer" value="/2014/06/21/what-is-manifold-learning/">		</form>
+
+		<div class="arrow"></div>
+	</div>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/prateekvjoshi.com\/2014\/06\/21\/what-is-manifold-learning\/":1541};
+	</script>
+		<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-linkedin' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+		});
+		</script>
+		<script type="text/javascript" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/form.js"></script>
+<link rel="stylesheet" id="all-css-0-3" href="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/jetpack-carousel.css" type="text/css" media="all">
+<!--[if lte IE 8]>
+<link rel='stylesheet' id='jetpack-carousel-ie8fix-css'  href='https://s1.wp.com/wp-content/mu-plugins/carousel/jetpack-carousel-ie8fix.css?m=1412618825h&#038;ver=20121024' type='text/css' media='all' />
+<![endif]-->
+<script type="text/javascript">
+/* <![CDATA[ */
+var actionbardata = {"siteID":"36042762","siteName":"PERPETUAL ENIGMA","siteURL":"https:\/\/prateekvjoshi.com","icon":"<img alt='' src='https:\/\/secure.gravatar.com\/blavatar\/6b1fd006e5dc0d94119f54c57ac75172?s=50&d=https%3A%2F%2Fs1.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/twentyeleven","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/prateekvjoshi.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fprateekvjoshi.com%2F2014%2F06%2F21%2Fwhat-is-manifold-learning%2F","themeURL":"https:\/\/wordpress.com\/theme\/twentyeleven\/","xhrURL":"https:\/\/prateekvjoshi.com\/wp-admin\/admin-ajax.php","nonce":"4d0e29debd","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"1b8460a776\" \/>","referer":"https:\/\/prateekvjoshi.com\/2014\/06\/21\/what-is-manifold-learning\/","canFollow":"1","statusMessage":"","customizeLink":"https:\/\/prateekvjoshi.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fprateekvjoshi.wordpress.com%2F2014%2F06%2F21%2Fwhat-is-manifold-learning%2F","postID":"1541","shortlink":"http:\/\/wp.me\/p2remS-oR","canEditPost":"","editLink":"https:\/\/wordpress.com\/post\/prateekvjoshi.com\/1541","statsLink":"https:\/\/wordpress.com\/stats\/post\/1541\/prateekvjoshi.com","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: Twenty Eleven","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in the Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"Join 7,364 other followers","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/prateekvjoshi.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fprateekvjoshi.com%2F2014%2F06%2F21%2Fwhat-is-manifold-learning%2F\">Log in now.<\/a>","stats":"Stats"}};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/prateekvjoshi.com\/wp-admin\/admin-ajax.php","nonce":"6bf79e3e06","display_exif":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","comment_registration":"0","require_name_email":"1","login_url":"https:\/\/prateekvjoshi.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fprateekvjoshi.com%2F2014%2F06%2F21%2Fwhat-is-manifold-learning%2F","blog_id":"36042762","local_comments_commenting_as":"<fieldset><label for=\"email\">Email (Required)<\/label> <input type=\"text\" name=\"email\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-email-field\" \/><\/fieldset><fieldset><label for=\"author\">Name (Required)<\/label> <input type=\"text\" name=\"author\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-author-field\" \/><\/fieldset><fieldset><label for=\"url\">Website<\/label> <input type=\"text\" name=\"url\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-url-field\" \/><\/fieldset>","reblog":"Reblog","reblogged":"Reblogged","reblog_add_thoughts":"Add your thoughts here... (optional)","reblogging":"Reblogging...","post_reblog":"Post Reblog","stats_query_args":"blog=36042762&v=wpcom&tz=-7&user_id=0&subd=prateekvjoshi","is_public":"1","reblog_enabled":""};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/saved_resource(3)"></script><div id="actionbar" class="actnbr-pub-twentyeleven actnbr-has-follow"><ul><li class="actnbr-btn actnbr-hidden"> 			    	<a class="actnbr-action actnbr-actn-follow" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/"><svg class="gridicon gridicon__follow" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"></path></g></svg><span>Follow</span></a> 			    	<div class="actnbr-popover tip tip-top-left actnbr-notice"> 			    		<div class="tip-arrow"></div> 			    		<div class="tip-inner actnbr-follow-bubble"></div> 			    	</div> 			    </li><li class="actnbr-ellipsis actnbr-hidden"> 			  <svg class="gridicon gridicon__ellipsis" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><circle cx="5" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle></g></svg> 			  <div class="actnbr-popover tip tip-top-left actnbr-more"> 			  	<div class="tip-arrow"></div> 			  	<div class="tip-inner"> 				  <ul> 				    <li class="actnbr-sitename actnbr-hidden"><a href="https://prateekvjoshi.com/"><img alt="" src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/6b1fd006e5dc0d94119f54c57ac75172" class="avatar avatar-50" height="50" width="50"> PERPETUAL ENIGMA</a></li> 				   	<li class="actnbr-folded-customize actnbr-hidden"><a href="https://prateekvjoshi.wordpress.com/wp-admin/customize.php?url=https%3A%2F%2Fprateekvjoshi.wordpress.com%2F2014%2F06%2F21%2Fwhat-is-manifold-learning%2F"><svg class="gridicon gridicon__customize" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M2 6c0-1.505.78-3.08 2-4 0 .845.69 2 2 2 1.657 0 3 1.343 3 3 0 .386-.08.752-.212 1.09.74.594 1.476 1.19 2.19 1.81L8.9 11.98c-.62-.716-1.214-1.454-1.807-2.192C6.753 9.92 6.387 10 6 10c-2.21 0-4-1.79-4-4zm12.152 6.848l1.34-1.34c.607.304 1.283.492 2.008.492 2.485 0 4.5-2.015 4.5-4.5 0-.725-.188-1.4-.493-2.007L18 9l-2-2 3.507-3.507C18.9 3.188 18.225 3 17.5 3 15.015 3 13 5.015 13 7.5c0 .725.188 1.4.493 2.007L3 20l2 2 6.848-6.848c1.885 1.928 3.874 3.753 5.977 5.45l1.425 1.148 1.5-1.5-1.15-1.425c-1.695-2.103-3.52-4.092-5.448-5.977z" data-reactid=".2.1.1:0.1b.0"></path></g></svg><span>Customize<span></span></span></a></li> 				    <li class="actnbr-folded-follow actnbr-hidden"><a class="actnbr-action actnbr-actn-follow" href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/"><svg class="gridicon gridicon__follow" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"></path></g></svg><span>Follow</span></a></li> 					<li class="actnbr-signup actnbr-hidden"><a href="https://wordpress.com/start/">Sign up</a></li> 				    <li class="actnbr-login actnbr-hidden"><a href="https://prateekvjoshi.wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fprateekvjoshi.com%2F2014%2F06%2F21%2Fwhat-is-manifold-learning%2F">Log in</a></li> 				     				    <li class="actnbr-shortlink actnbr-hidden"><a href="http://wp.me/p2remS-oR">Copy shortlink</a></li> 				    <li class="flb-report actnbr-hidden"><a href="http://en.wordpress.com/abuse/">Report this content</a></li> 				     				     				    <li class="actnbr-subs actnbr-hidden"><a href="https://subscribe.wordpress.com/">Manage subscriptions</a></li> 				    <li class="actnbr-fold actnbr-hidden"><a href="https://prateekvjoshi.com/2014/06/21/what-is-manifold-learning/">Collapse this bar</a></li> 			      </ul> 			    </div> 		      </div> 		    </li> 	      </ul></div>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>		<iframe src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/master.html" scrolling="no" id="likes-master" name="likes-master" style="display:none;"></iframe>
+		<div id="likes-other-gravatars"><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script>
+			var _comscore = _comscore || [];
+			_comscore.push({
+				c1: "2",
+				c2: "7518284"
+			});
+			(function() {
+				var s = document.createElement("script"),
+					el = document.getElementsByTagName("script")[0];
+				s.defer = true;
+				s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+				el.parentNode.insertBefore(s, el);
+			})();
+		</script>
+		<noscript>
+			&lt;p class="robots-nocontent"&gt;&lt;img src="https://sb.scorecardresearch.com/p?c1=2&amp;c2=7518284&amp;c3=&amp;c4=&amp;c5=&amp;c6=&amp;c15=&amp;cv=2.0&amp;cj=1" alt="" style="display:none;" width="1" height="1" /&gt;&lt;/p&gt;
+		</noscript><script src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/w.js" type="text/javascript" async="" defer=""></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'36042762','blog_tz':'-7','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'36042762','v':'wpcom','tz':'-7','user_id':'0','post':'1541','subd':'prateekvjoshi'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1TaVhzUzFMbjdWNHpwZGhTayxPSUFCMGNrd29+Smw0TDhnZmRTK0hlRi9QSGh6bi9GXVhBJWIlZlR5U1JMLU8/MkNtblkvY1dzK3YrWW1CbjZiL2VlLnR6QkUsbDdSejJMclp1JjF8LWJsMi1MWEE1Ll83OXVBNnYtT1hfcVd0dF03U2ZTZ2FMPUtbdnhsR2xDRy4yJXVIRHd+Qnl5di5OaGFTbk0sTi9bTUhDOGNWRTV6X11ibGxnJjB5LnVdQnJLeFUsQi1ScisuT2dMYzhRVlRwY2dHMFg0RFN2XSV8SC8ybD1xZiw1QyVoTVFzY1dQYkt4WGt+Yi9oYmpnUFJsQk1zaFg1Tl0/ei0='}]);
+_stq.push([ 'clickTrackerInit', '36042762', '1541' ]);
+	</script>
+<noscript>&lt;img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /&gt;</noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+
+<img src="./What Is Manifold Learning_ _ PERPETUAL ENIGMA_files/g.gif" alt=":)" id="wpstats"></body></html>

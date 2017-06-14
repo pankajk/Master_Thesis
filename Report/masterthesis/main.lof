@@ -1,21 +1,40 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Manifold Learning \citep {Ety2008}\relax }}{2}{figure.caption.12}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Coordinate Chart\citep {Ety2008}\relax }}{6}{figure.caption.34}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Transition map.\citep {Ety2008}\relax }}{7}{figure.caption.35}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Tangent Space.\citep {Ety2008}\relax }}{8}{figure.caption.37}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Coordinate Chart\citep {Ety2008}\relax }}{7}{figure.caption.34}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Transition map.\citep {Ety2008}\relax }}{8}{figure.caption.35}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Tangent Space.\citep {Ety2008}\relax }}{9}{figure.caption.37}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces a) Manifold with original (red) and projected (blue) points. b) Geometry and constraint visualization of optimization function. Pictures taken from Nicolas Thorstensen works \citep {Ety2008}\relax }}{11}{figure.caption.49}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Application of PCA. \relax }}{12}{figure.caption.53}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Application of MDS.\relax }}{13}{figure.caption.55}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Multi-Dimensional Scaling\relax }}{13}{figure.caption.56}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Application of Isomap\relax }}{15}{figure.caption.63}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Multi-Dimensional Scaling. Left: Distance between two points using a distance in the data space. Right: Distance between two points using an approximated geodesic path. Image taken from Patrick Etyngier work \citep {Ety2008}.\relax }}{15}{figure.caption.64}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces LLE. a) $x_i$ is appropriated by its neighborhood $(x_{j}^{'}, x_{j})$. b) The black line touching the level set at a single point defines the constraints\relax }}{17}{figure.caption.78}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Application of LLE\relax }}{17}{figure.caption.79}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Application of Laplacian Eigenmaps\relax }}{18}{figure.caption.82}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Overview of Manifold Learning Algorithms\relax }}{21}{figure.caption.96}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces a) Manifold with original (red) and projected (blue) points. b) Geometry and constraint visualization of optimization function. Pictures taken from Nicolas Thorstensen works \citep {Ety2008}\relax }}{12}{figure.caption.49}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Application of PCA. \relax }}{13}{figure.caption.53}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Application of MDS.\relax }}{14}{figure.caption.55}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Multi-Dimensional Scaling\relax }}{14}{figure.caption.56}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Application of Isomap\relax }}{16}{figure.caption.63}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Multi-Dimensional Scaling. Left: Distance between two points using a distance in the data space. Right: Distance between two points using an approximated geodesic path. Image taken from Patrick Etyngier work \citep {Ety2008}.\relax }}{16}{figure.caption.64}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces LLE. a) $x_i$ is appropriated by its neighborhood $(x_{j}^{'}, x_{j})$. b) The black line touching the level set at a single point defines the constraints\relax }}{18}{figure.caption.78}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Application of LLE\relax }}{18}{figure.caption.79}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Application of Laplacian Eigenmaps\relax }}{19}{figure.caption.82}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Overview of Manifold Learning Algorithms\relax }}{22}{figure.caption.96}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces First look at MNIST data\relax }}{25}{figure.caption.104}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Hough transform\relax }}{26}{figure.caption.105}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Pearson Correlation plot 500 observations\relax }}{27}{figure.caption.107}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces PCA graphical illustration\relax }}{28}{figure.caption.109}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Explained Variance\relax }}{28}{figure.caption.110}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Top 200 eigenvalues\relax }}{29}{figure.caption.111}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces PCA\relax }}{30}{figure.caption.112}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces TSNE ( t-Distributed Stochastic Neighbour Embedding )\relax }}{30}{figure.caption.114}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Manifold Learning Algorithms Output\relax }}{31}{figure.caption.115}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Out of sample predication for manifold learning algorithms\relax }}{31}{figure.caption.116}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Anomaly detection approach based on data labels.\relax }}{35}{figure.caption.127}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Multiscale Algorithm.\relax }}{38}{figure.caption.144}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Input Image\relax }}{39}{figure.caption.147}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Anomaly Detection results for multiscale detector\relax }}{40}{figure.caption.149}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Anomaly Detection results for multiscale detector\relax }}{41}{figure.caption.151}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Anomaly Detection results for multiscale detector\relax }}{42}{figure.caption.153}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Anomaly Detection results for multiscale detector\relax }}{42}{figure.caption.155}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Manifold learning algorithms comparison using Swiss Roll. MDS and PCA fails to unroll Swiss Roll; LLE and Laplacian fails to perform too; Diffusion maps couldn't unroll Swiss Roll. \relax }}{46}{figure.caption.171}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Manifold learning algorithms comparison using Toroidal Helix. ISOMAP, LLE, Laplacian, and Diffusion Map unraveled Toroidal Helix into a circle, which is correct. PCA and MDS fails to perform. \relax }}{47}{figure.caption.172}

@@ -2,6 +2,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Model Summary for $\mathbf {Data}$(original)\relax }}{32}{table.caption.119}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Model Summary for $\mathbf {Data}$(isomap)\relax }}{33}{table.caption.120}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Model Summary for $\mathbf {Data}$(tsne)\relax }}{33}{table.caption.121}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Model Summary for $\mathbf {Data}$(lle)\relax }}{33}{table.caption.122}
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Parameters used in Multiscle algorithms for figure \ref {fig:d} (Black Sheep)\relax }}{40}{table.caption.150}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Parameters used in Multiscle algorithms for figure \ref {fig:c} (Village Girl)\relax }}{41}{table.caption.152}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Parameters used in Multiscle algorithms for figure \ref {fig:e} (girl in the field)\relax }}{41}{table.caption.154}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Parameters used in Multiscle algorithms for figure \ref {fig:a} (sea-mines)\relax }}{43}{table.caption.156}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Parameters used in Multiscle algorithms for figure \ref {fig:f}\relax }}{43}{table.caption.157}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

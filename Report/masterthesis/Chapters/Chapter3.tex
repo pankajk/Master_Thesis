@@ -13,7 +13,7 @@ in a higher dimensional space. Using earlier, the algorithms can work directly i
 \section{Introduction}
 Most of the datasets encountered in image processing often consist of
 a large number of samples each of which are themselves of high dimension.
-Further processing of the datum is done either treating it directly or extracting complex features before processing. Nevertheless, it  wither its
+Further processing of the datum is done either treating it directly or extracting complex features before processing. Nevertheless, wither its
 entire datum or a set extracted features, the dimensionality of
 problems usually remain high. This in turn slows down the processing considerably or sometimes making the treatment even intractable. The task to reducing the computational burden is to reduce the dimensionality of the data. Dimensionality reduction can be thought of as mathematical mapping of high-dimensional data into a meaningful representation of the intrinsic dimensionality. The intrinsic dimensionality of a data set can be defined as the lowest number of variables that can preserve the geometrical structure of the data.
 
@@ -400,7 +400,7 @@ As discussed above, diffusion distance reflects the intrinsic geometry of the da
 \section{Other manifold learning algorithms}
 
 Many other Laplacian based techniques exist in literature to reduce the dimensionality of a point cloud which were not dicussed in this chapter. For example, Maximum Variance Unfolding (MVU)\citep{Ety2008}, which links most of Laplacian-based methods such as LE, LLE and Isomap. Another important approach which is derived from the LLE framework is called Hessian eigenmaps\citep{Ety2008}. The methods is widely used when the underlying embedding is not convex. In figure \ref{comp} taken from Thorstensen work \citep{Thor2009} lists the general properties for manifold learning algorithms.
-
+%\begin{landscape}
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[width=\textwidth]{./Figures/comp_table.png}
@@ -408,7 +408,7 @@ Many other Laplacian based techniques exist in literature to reduce the dimensio
 \label{comp} 
 \end{center}
 \end{figure}
-
+%\end{landscape}
 \section{Intrinsic Dimension}
 \label{s:id}
 

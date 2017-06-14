@@ -8,33 +8,21 @@
 %----------------------------------------------------------------------------------------
 
 \section{Conclusions}
+
 \begin{enumerate}
-
-\item The enormous blockchain (60 GB as of now) and the newer bitcoin clients indexing the full blockchain using LevelDB had made earlier public available software obsolete. The thesis develops an open source blockchain parsing tools to extract agent resolved data, which can be used to extend the stucked research in bitcoin transaction dynamics.
-
-\item The validation of the data parsed from our tool is then checked by
-reproducing the ”Mathew Effect” phenomenon from prominent paper using their original matlab code, but with our own data. The transaction dynamics in the bitcoin as money flow on the transaction network, support popular hypothesis in economics having roots in preferential attachment, called Matthew effect or the "rich get richer phenomenon".
-
-\item By using the agent resolved data, the case study of silk road arrest is illustrated with the transaction graph with details. It paves the way to understand the important events in bitcoin based on transaction.
-
-\item By defining quantitative measure of transformation over time, in terms of similarity index using different kernels, we infer that there is correspondence between network structure and exchange price in bitcoin. It also concludes that choice of graph kernels as per the graph structure plays important role on problem related to graph isomorphism. 
-
-\item We extend deep graph kernels \citep{Yanardag2015},
-involving propagation kernels, unseen in literature, to solve graph isomorphism problem, which gives extremely agreeable results.
-
-\item By defining quantitative measure of transformation over time, in terms of similarity index using different kernels, we infer that there is correspondence between network structure and exchange price in bitcoin, which is first step in price forecasting.
-
+\item Deviating from primary evaluation methodology of manifold leaning algorithms based on artificial data sets, we use MNIST datasets for optical character recognition.
+\item The out of sample prediction for manifold algorithms indicates that test points are projected on the corrects clusters of training datasets, but separation of some numbers were blurred.
+\item The preprocessing of MNIST data by manifold learning algorithms didn't improve accuracy in optical character recognition. 
+\item For anomaly detection, the proposed algorithms performs well on the images which is not too contrast, but gives false positive on image which is of high resolutions.
 \end{enumerate}
 
 \section{Future Work}
-
 \begin{enumerate}
-
-\item On transactions data front, the future work would be to transform the data set into a simplified one indexed by user entity rather than
-address to do some other meaningful studies, like identifying cluster, market player and linking events to predict bubbles.
-
-\item  The possible extension of our work would be to leverage on blockchain network features, as a basis to conduct deep learning learning
-prediction on the price change of Bitcoin.
-
+\item When answering the questions on evaluating the results of manifold learning, we need to take in account of manifold structure and noises.
+\item When there is multiple sub-manifolds of possibly different dimensionalities embedded in high dimensional complex data, it is most unlikely that the existing manifold learning approaches can discover all the interesting lower-dimensional structures. There is need to develop a hierarchical manifolds learning framework to discover a variety of the underlying low dimensional structures.
+\item In optical character recognition, there is need to optimize the model when calculating accuracy. 
+\item A future extension of this work would be combine  anomaly scores from the different multiscale levels into a single anomaly score. This will enable detecting anomalies of different size in an image, which this algorithms fails to address.
 \end{enumerate}
+
+
 %----------------------------------------------------------------------------------------
